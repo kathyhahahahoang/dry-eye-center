@@ -1,0 +1,33 @@
+:root {
+  --font-xl: 3rem;
+  --font-large: 2.4rem;
+  --font-med: 2rem;
+  --font-small: 1.6rem;
+  --font-xs: 1.2rem;
+
+  --line-height-large: 3.4rem;
+  --line-height-med: 3rem;
+  --line-height-small: 2.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
