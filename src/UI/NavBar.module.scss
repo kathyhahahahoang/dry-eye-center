@@ -1,0 +1,45 @@
+.container {
+  width: 100vw;
+  height: 100%;
+  //   background-color: lightcoral;
+}
+
+.name {
+  font-size: 4.8vw;
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 2px solid black;
+}
+
+.nav-links-ul {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px solid black;
+  position: relative;
+  //   background-color: lightblue;
+
+  li {
+    font-size: 2rem;
+  }
+}
+
+.nav-links-left {
+  display: flex;
+  gap: 5rem;
+  //   background-color: green;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.picture {
+  width: 70%;
+}
+
+.nav-links-right {
+  margin-left: auto;
+}

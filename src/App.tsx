@@ -1,7 +1,9 @@
+import NavBar from "./UI/NavBar.tsx";
+
 function App() {
   return (
     <>
-      <p>dry eye</p>
+      <NavBar />
     </>
   );
 }
