@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  //   background-color: lavenderblush;
+}
+
+.guarantee-container {
+  //   background-color: peachpuff;
+  display: flex;
+}
+
+.picture-container {
+  width: 50%;
+  height: 90rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.text-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 4.4rem;
+  }
+
+  li {
+    font-size: 3.6rem;
+  }
+}
+
+.text-container-center {
+  //   background-color: pink;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+}

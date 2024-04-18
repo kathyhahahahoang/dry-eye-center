@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  //   background-color: pink;
+  display: flex;
+  padding: 6rem 2rem;
+}
+
+.text-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 6rem;
+  padding-right: 10rem;
+}
+
+.picture-container {
+  width: 50%;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

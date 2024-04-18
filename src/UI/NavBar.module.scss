@@ -20,24 +20,20 @@
   //   background-color: lightblue;
 
   li {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 }
 
 .nav-links-left {
   display: flex;
-  gap: 5rem;
+  align-items: center;
+  gap: 3rem;
   //   background-color: green;
 }
 
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .picture {
-  width: 70%;
+  width: 5rem;
+  height: auto;
 }
 
 .nav-links-right {

@@ -10,14 +10,13 @@ function NavBar() {
       <nav>
         <ul className={styles["nav-links-ul"]}>
           <div className={styles["nav-links-left"]}>
+            <img src={logo} className={styles.picture} />
             <li>Our doctors</li>
             <li>Dry eye disease</li>
             <li>At-home treatments</li>
-            <li>In-office treatements</li>
+            <li>In-office treatments</li>
           </div>
-          <div className={styles.logo}>
-            <img src={logo} className={styles.picture} />
-          </div>
+
           <div className={styles["nav-links-right"]}>
             <li>Contact us</li>
           </div>

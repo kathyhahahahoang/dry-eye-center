@@ -22,7 +22,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: bisque;
+  background-color: white;
 }
 
 ul {
@@ -31,4 +31,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.font-xl {
+  font-size: 4rem;
 }
