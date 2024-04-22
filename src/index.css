@@ -23,6 +23,19 @@
 html {
   font-size: 62.5%;
   background-color: white;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rufina", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 ul {
@@ -31,8 +44,4 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.font-xl {
-  font-size: 4rem;
 }
