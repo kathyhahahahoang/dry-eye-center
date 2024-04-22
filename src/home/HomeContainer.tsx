@@ -11,7 +11,6 @@ function HomeContainer() {
       <HomeSubheader />
       <HomeServices />
       <HomeCTA />
-      <Footer />
     </>
   );
 }
