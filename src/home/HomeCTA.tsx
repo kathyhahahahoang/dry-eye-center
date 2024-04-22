@@ -4,15 +4,17 @@ import glasses from "../assets/images/glasses.jpg";
 function HomeCTA() {
   return (
     <div className={styles.container}>
-      <div className={styles["picture-container"]}>
-        <img src={glasses} className={styles.picture} />
-        <div className={styles["text-container"]}>
+      <div className={styles["text-container"]}>
+        <div className={styles["text-center"]}>
           <h3>
             We also offer education and management options you can perform at
-            home.
+            home
           </h3>
           <button>Learn more</button>
         </div>
+      </div>
+      <div className={styles["picture-container"]}>
+        <img src={glasses} className={styles.picture} />
       </div>
     </div>
   );

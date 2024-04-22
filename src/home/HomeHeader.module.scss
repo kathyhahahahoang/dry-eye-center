@@ -2,23 +2,24 @@
   width: 100%;
   //   background-color: pink;
   display: flex;
-  padding: 6rem 2rem;
+  flex-direction: column;
 }
 
 .text-container {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
+  // background-color: lemonchiffon;
+  padding: 14rem 4rem 6rem;
 }
 
 .text {
-  font-size: 6rem;
-  padding-right: 10rem;
+  font-size: 8rem;
   color: palevioletred;
 }
 
 .picture-container {
-  width: 50%;
+  width: 100%;
 }
 
 .picture {

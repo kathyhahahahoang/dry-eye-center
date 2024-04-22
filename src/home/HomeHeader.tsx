@@ -6,8 +6,8 @@ function HomeHeader() {
     <div className={styles.container}>
       <div className={styles["text-container"]}>
         <h1 className={styles.text}>
-          Specializing in the assessment and treatment of mild to severe dry eye
-          disease
+          Dry Eye Center of San Antonio
+          <br /> at Alamo Eye Care
         </h1>
       </div>
       <div className={styles["picture-container"]}>

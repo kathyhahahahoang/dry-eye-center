@@ -1,16 +1,50 @@
 .container {
   width: 100%;
-  //   background-color: lavenderblush;
+}
+
+.services-container {
+  background-color: palevioletred;
+  display: flex;
+  padding: 20rem 4rem;
+}
+
+.services-text-container {
+  width: 35%;
+  display: flex;
+  padding: 4rem;
+
+  h3 {
+    font-size: 4rem;
+  }
+}
+
+.pictures-container {
+  width: 65%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30%, 33%));
+  column-gap: 4rem;
+}
+
+.picture-item {
+  img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+  }
+}
+
+.text {
+  font-size: 3rem;
 }
 
 .guarantee-container {
-  //   background-color: peachpuff;
   display: flex;
+  margin: 10rem 0;
 }
 
-.picture-container {
+.guarantee-picture-container {
   width: 50%;
-  height: 90rem;
 
   img {
     width: 100%;
@@ -19,26 +53,30 @@
   }
 }
 
-.text-container {
+.guarantee-text-container {
   width: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  h3 {
-    font-size: 4.4rem;
-  }
-
-  li {
-    font-size: 3.6rem;
-    color: palevioletred;
-  }
+  justify-content: center;
 }
 
-.text-container-center {
-  //   background-color: pink;
+.text-center {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 80%;
+
+  h3 {
+    color: palevioletred;
+    font-size: 4rem;
+  }
+}
+
+.ul-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  li {
+    font-size: 3rem;
+  }
 }
