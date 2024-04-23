@@ -5,15 +5,9 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <div className={styles.container}>
-      <div className={styles.name}>
-        Dry Eye Center of San Antonio at Alamo Eye Care
-      </div>
       <nav>
         <ul className={styles["nav-links-ul"]}>
           <div className={styles["nav-links-left"]}>
-            <NavLink to="/">
-              <img src={logo} className={styles.picture} />
-            </NavLink>
             <li>
               <NavLink
                 to="/doctors"
@@ -34,6 +28,13 @@ function NavBar() {
                 Dry eye disease
               </NavLink>
             </li>
+          </div>
+          <div className={styles["nav-links-center"]}>
+            <NavLink to="/">
+              <img src={logo} className={styles.picture} />
+            </NavLink>
+          </div>
+          <div className={styles["nav-links-right"]}>
             <li>
               <NavLink
                 to="/at-home-treatments"
@@ -54,9 +55,6 @@ function NavBar() {
                 In-office treatments
               </NavLink>
             </li>
-          </div>
-
-          <div className={styles["nav-links-right"]}>
             <li>
               <NavLink
                 to="/contact"
