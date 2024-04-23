@@ -1,5 +1,6 @@
 import styles from "./NavBar.module.scss";
 import logo from "../assets/images/logo.webp";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -10,15 +11,62 @@ function NavBar() {
       <nav>
         <ul className={styles["nav-links-ul"]}>
           <div className={styles["nav-links-left"]}>
-            <img src={logo} className={styles.picture} />
-            <li>Our doctors</li>
-            <li>Dry eye disease</li>
-            <li>At-home treatments</li>
-            <li>In-office treatments</li>
+            <NavLink to="/">
+              <img src={logo} className={styles.picture} />
+            </NavLink>
+            <li>
+              <NavLink
+                to="/doctors"
+                className={({ isActive }) =>
+                  isActive ? `${styles["link-active"]}` : `${styles.link}`
+                }
+              >
+                Our doctors
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dry-eye-disease"
+                className={({ isActive }) =>
+                  isActive ? `${styles["link-active"]}` : `${styles.link}`
+                }
+              >
+                Dry eye disease
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/at-home-treatments"
+                className={({ isActive }) =>
+                  isActive ? `${styles["link-active"]}` : `${styles.link}`
+                }
+              >
+                At-home treatments
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/in-office-treatments"
+                className={({ isActive }) =>
+                  isActive ? `${styles["link-active"]}` : `${styles.link}`
+                }
+              >
+                In-office treatments
+              </NavLink>
+            </li>
           </div>
 
           <div className={styles["nav-links-right"]}>
-            <li>Contact us</li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? `${styles["link-active"]}` : `${styles.link}`
+                }
+              >
+                Contact us
+              </NavLink>
+            </li>
           </div>
         </ul>
       </nav>
