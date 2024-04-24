@@ -5,9 +5,10 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <div className={styles.container}>
-      <div className={styles.name}>
+      <h1 className={styles.name}>
         Dry Eye Center of San Antonio at Alamo Eye Care
-      </div>
+      </h1>
+
       <nav>
         <ul className={styles["nav-links-ul"]}>
           <div className={styles["nav-links-left"]}>
