@@ -1,24 +1,29 @@
 .container {
   width: 100%;
-  //   background-color: pink;
+  // background-color: pink;
   display: flex;
-  padding: 6rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 30rem 0 25rem 0;
 }
 
 .text-container {
-  width: 50%;
   display: flex;
   align-items: center;
 }
 
-.text {
-  font-size: 6rem;
-  padding-right: 10rem;
+.name {
+  font-size: 10rem;
+  line-height: 10rem;
+  text-align: center;
+  font-weight: 500;
   color: palevioletred;
 }
 
 .picture-container {
-  width: 50%;
+  width: 80%;
 }
 
 .picture {

@@ -4,11 +4,8 @@ import eyes from "../assets/images/eyes.jpg";
 
 function HomeServices() {
   return (
-    <div className={styles.container}>
-      <div className={styles["guarantee-container"]}>
-        <div className={styles["picture-container"]}>
-          <img src={glasses} />
-        </div>
+    <>
+      <div className={styles["services-container"]}>
         <div className={styles["text-container"]}>
           <div className={styles["text-container-center"]}>
             <h3>
@@ -23,24 +20,37 @@ function HomeServices() {
             </ul>
           </div>
         </div>
+        <div className={styles["picture-container"]}>
+          <img src={glasses} />
+        </div>
       </div>
       <div className={styles["guarantee-container"]}>
-        <div className={styles["picture-container"]}>
-          <img src={eyes} />
-        </div>
-        <div className={styles["text-container"]}>
+        <div className={styles["guarantee-text-container"]}>
           <div className={styles["text-container-center"]}>
-            <h3>We guarantee:</h3>
-            <ul>
-              <li>- High quality eye exam</li>
-              <li>- Dry eye evaluation with management</li>
-              <li>- Expert contact lens fittings</li>
-              <li>- Eyeglasses</li>
-            </ul>
+            <h3 className={styles.guarantee}>We guarantee:</h3>
           </div>
         </div>
+
+        <ul className={styles["guarantee-list"]}>
+          <li className={styles["guarantee-item"]}>
+            <img src={glasses} />
+            <p>High quality eye exam</p>
+          </li>
+          <li className={styles["guarantee-item"]}>
+            <img src={eyes} />
+            <p>Dry eye evaluation with management</p>
+          </li>
+          <li className={styles["guarantee-item"]}>
+            <img src={glasses} />
+            <p>Expert contact lens fittings</p>
+          </li>
+          <li className={styles["guarantee-item"]}>
+            <img src={eyes} />
+            <p>Eyeglasses</p>
+          </li>
+        </ul>
       </div>
-    </div>
+    </>
   );
 }
 

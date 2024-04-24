@@ -5,10 +5,10 @@ function HomeHeader() {
   return (
     <div className={styles.container}>
       <div className={styles["text-container"]}>
-        <h1 className={styles.text}>
-          Specializing in the assessment and treatment of mild to severe dry eye
-          disease
-        </h1>
+        <p className={styles.name}>
+          Dry Eye Center of San Antonio <br />
+          at Alamo Eye Care
+        </p>
       </div>
       <div className={styles["picture-container"]}>
         <img src={eyes} className={styles.picture} />
