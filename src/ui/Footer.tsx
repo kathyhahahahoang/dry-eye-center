@@ -20,6 +20,9 @@ function Footer() {
             at Alamo Eye Care
           </h3>
         </div>
+        <p className={styles.copyright}>
+          © 2024 Dry Eye Center of San Antonio at Alamo Eye Care
+        </p>
       </div>
       <div className={styles["links-container"]}>
         <ul className={styles["ul-container"]}>
@@ -28,17 +31,18 @@ function Footer() {
           <li>San Antonio, TX 78232</li>
           <li>Phone: (210)-403-9050</li>
           <li>Fax: (210)-403-9939</li>
+          <li>alamoeyecare@gmail.com</li>
         </ul>
         <ul className={styles["ul-container"]}>
           <li>Hours</li>
-          <li>Monday - Friday: 9 am - 5 pm</li>
+          <li>Weekdays: 9 am - 5 pm</li>
           <li>Weekends: closed</li>
         </ul>
         <ul className={styles["ul-container"]}>
-          <li>Contact us</li>
-          <li>Phone: (210)-403-9050</li>
+          <li>Connect with us:</li>
+          {/* <li>Phone: (210)-403-9050</li>
           <li>Fax: (210)-403-9939</li>
-          <li>alamoeyecare@gmail.com</li>
+          <li>alamoeyecare@gmail.com</li> */}
           <div className={styles["social-media-container"]}>
             <div>
               <RiInstagramLine className={styles.icon} />

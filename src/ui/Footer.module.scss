@@ -3,7 +3,7 @@
   background-color: black;
   color: white;
   display: flex;
-  padding: 10rem 2rem;
+  padding: 10rem 4rem 4rem 4rem;
 }
 
 .buttons-container {
@@ -29,10 +29,14 @@
   object-fit: cover;
 }
 
+.copyright {
+  padding-top: 6rem;
+  font-size: 1.4rem;
+}
+
 .social-media-container {
   display: flex;
   gap: 2rem;
-  padding-top: 3rem;
 }
 
 .icon {
