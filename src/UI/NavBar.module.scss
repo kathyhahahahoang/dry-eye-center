@@ -1,17 +1,20 @@
 .container {
   width: 100vw;
-  height: 100%;
+  padding: 3rem 4rem;
   position: fixed;
   z-index: 200;
+  transition: all 0.2s;
+}
 
-  //   background-color: lightcoral;
+.container-scrolled {
+  background-color: white;
+  transition: all 0.2s;
+  width: 100%;
 }
 
 .nav-links-ul {
-  // background-color: rgb(113, 113, 113);
   display: flex;
   align-items: center;
-  padding: 3rem 4rem;
 
   position: relative;
   //   background-color: lightblue;
@@ -24,7 +27,7 @@
 .nav-links-left {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 7rem;
 
   // background-color: green;
 }
@@ -43,19 +46,22 @@
 .nav-links-right {
   margin-left: auto;
   display: flex;
-  gap: 5rem;
+  gap: 7rem;
   // background-color: green;
 }
 
 .link {
-  // color: black;
   color: white;
 }
 
-.link:hover {
+.link-scrolled {
   color: #8cbafa;
 }
 
+.link:hover {
+  color: black;
+}
+
 .link-active {
-  color: #8cbafa;
+  color: black;
 }
