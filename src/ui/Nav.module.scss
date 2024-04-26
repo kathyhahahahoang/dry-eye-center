@@ -1,0 +1,51 @@
+.container {
+  width: 100vw;
+  padding: 3rem 4rem;
+
+  transition: all 0.3s;
+}
+
+.nav-links-ul {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  li {
+    font-size: 2.4rem;
+  }
+}
+
+.nav-links-left {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.nav-links-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.picture {
+  width: 12rem;
+  height: auto;
+}
+
+.nav-links-right {
+  margin-left: auto;
+  display: flex;
+  gap: 7rem;
+}
+
+.link {
+  color: #8cbafa;
+}
+
+.link:hover {
+  color: black;
+}
+
+.link-active {
+  color: black;
+}

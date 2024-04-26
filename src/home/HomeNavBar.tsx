@@ -1,9 +1,9 @@
-import styles from "./NavBar.module.scss";
-import logo from "../assets/images/logo.png";
-import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import logo from "../assets/images/logo.png";
+import styles from "./HomeNavBar.module.scss";
+import { NavLink } from "react-router-dom";
 
-function NavBar() {
+function HomeNavBar() {
   const [isScrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 650);
 
@@ -118,4 +118,5 @@ function NavBar() {
     </nav>
   );
 }
-export default NavBar;
+
+export default HomeNavBar;
