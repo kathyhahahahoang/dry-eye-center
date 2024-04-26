@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background-color: black;
+  background-color: #465d7d;
   color: white;
   display: flex;
   padding: 10rem 4rem 4rem 4rem;
@@ -8,12 +8,16 @@
 
 .buttons-container {
   width: 50%;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 .logo-container {
   //   background-color: pink;
+=======
+  // background-color: pink;
+>>>>>>> design-4
   display: flex;
   gap: 4rem;
   align-items: center;
@@ -24,9 +28,7 @@
 }
 
 .logo {
-  width: 10rem;
-  height: 10rem;
-  object-fit: cover;
+  width: 15rem;
 }
 
 .copyright {

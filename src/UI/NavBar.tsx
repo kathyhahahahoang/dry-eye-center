@@ -1,20 +1,13 @@
 import styles from "./NavBar.module.scss";
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.name}>
-        Dry Eye Center of San Antonio at Alamo Eye Care
-      </h1>
-
       <nav>
         <ul className={styles["nav-links-ul"]}>
           <div className={styles["nav-links-left"]}>
-            <NavLink to="/">
-              <img src={logo} className={styles.picture} />
-            </NavLink>
             <li>
               <NavLink
                 to="/doctors"
@@ -37,6 +30,23 @@ function NavBar() {
             </li>
             <li>
               <NavLink
+                to="/dry-eye-disease"
+                className={({ isActive }) =>
+                  isActive ? `${styles["link-active"]}` : `${styles.link}`
+                }
+              >
+                Resources
+              </NavLink>
+            </li>
+          </div>
+          <div className={styles["nav-links-center"]}>
+            <NavLink to="/">
+              <img src={logo} className={styles.picture} />
+            </NavLink>
+          </div>
+          <div className={styles["nav-links-right"]}>
+            <li>
+              <NavLink
                 to="/at-home-treatments"
                 className={({ isActive }) =>
                   isActive ? `${styles["link-active"]}` : `${styles.link}`
@@ -55,9 +65,6 @@ function NavBar() {
                 In-office treatments
               </NavLink>
             </li>
-          </div>
-
-          <div className={styles["nav-links-right"]}>
             <li>
               <NavLink
                 to="/contact"

@@ -1,17 +1,20 @@
 import styles from "./HomeHeader.module.scss";
-import eyes from "../assets/images/eyes.jpg";
+import elderly2 from "../assets/images/elderly2.jpg";
 
 function HomeHeader() {
   return (
     <div className={styles.container}>
-      <div className={styles["text-container"]}>
-        <h1 className={styles.text}>
-          Specializing in the assessment and treatment of mild to severe dry eye
-          disease
-        </h1>
-      </div>
       <div className={styles["picture-container"]}>
-        <img src={eyes} className={styles.picture} />
+        <div className={styles.overlay} />
+        <img src={elderly2} className={styles.picture} />
+      </div>
+      <div className={styles["text-container"]}>
+        <h1 className={styles.header}>
+          Dry Eye Center of San Antonio at Alamo Eye Care
+        </h1>
+        <h3 className={styles.subheader}>
+          Specializing in the assessment and treatment of dry eye disease
+        </h3>
       </div>
     </div>
   );
