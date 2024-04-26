@@ -3,21 +3,15 @@
   background-color: #465d7d;
   color: white;
   display: flex;
-  padding: 10rem 4rem 4rem 4rem;
+  padding: 10rem 4rem 6rem 4rem;
 }
 
-.buttons-container {
+.left-container {
   width: 50%;
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
 }
+
 .logo-container {
-  //   background-color: pink;
-=======
   // background-color: pink;
->>>>>>> design-4
   display: flex;
   gap: 4rem;
   align-items: center;
@@ -32,18 +26,8 @@
 }
 
 .copyright {
-  padding-top: 6rem;
+  padding-top: 10rem;
   font-size: 1.4rem;
-}
-
-.social-media-container {
-  display: flex;
-  gap: 2rem;
-}
-
-.icon {
-  width: 3rem;
-  height: 3rem;
 }
 
 .links-container {
