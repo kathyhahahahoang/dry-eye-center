@@ -1,5 +1,5 @@
 import styles from "./Footer.module.scss";
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/logo.png";
 
 function Footer() {
   return (
@@ -9,8 +9,7 @@ function Footer() {
         <h3>
           Dry Eye Center
           <br />
-          of San Antonio <br />
-          at Alamo Eye Care
+          of San Antonio
         </h3>
       </div>
       <div className={styles["links-container"]}>
@@ -23,9 +22,10 @@ function Footer() {
         </ul>
         <ul className={styles["ul-container"]}>
           <li>Hours</li>
-          <li>Monday: closed</li>
-          <li>Tuesday-Friday: 9a-1p and 2p-6p</li>
-          <li>Saturday: 8a-2p</li>
+          <li>Monday - Thursday: 9am - 6pm</li>
+          <li>Friday: 9am - 3pm</li>
+          <li>Saturday: closed</li>
+          <li>Sunday: closed</li>
         </ul>
         <ul className={styles["ul-container"]}>
           <li>Contact us</li>

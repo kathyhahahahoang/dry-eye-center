@@ -15,7 +15,7 @@ function HomeServices() {
             <h3>
               Whether your dry eye symptoms are mild or severe, we will
               continuously work with you until we achieve the highest level of
-              vision and comfort attainable. Our dry eye services include:
+              vision and comfort attainable. What you can expect:
             </h3>
           </div>
           <div className={styles["service-container"]}>
@@ -49,7 +49,7 @@ function HomeServices() {
           <div className={styles["service-container"]}>
             <div className={styles["service-name"]}>
               <p className={styles.service}>
-                Latest treatments in dry eye disease
+                Latest advancements in dry eye treatment technology
               </p>
               <p className={styles.desc}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
@@ -83,27 +83,26 @@ function HomeServices() {
           </div>
           <div className={styles["guarantee-item"]}>
             <p className={styles["guarantee-title"]}>
-              Dry eye evaluation with management
+              Prescription therapeutics
             </p>
             <p className={styles["guarantee-desc"]}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit
             </p>
           </div>
           <div className={styles["guarantee-item"]}>
-            <p className={styles["guarantee-title"]}>
-              Expert contact lens fittings
-            </p>
+            <p className={styles["guarantee-title"]}>In-office procedures</p>
             <p className={styles["guarantee-desc"]}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit
             </p>
           </div>
           <div className={styles["guarantee-item"]}>
-            <p className={styles["guarantee-title"]}>Eyeglasses</p>
+            <p className={styles["guarantee-title"]}> Medical contact lenses</p>
             <p className={styles["guarantee-desc"]}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit
             </p>
           </div>
         </div>
+        <button className={styles.button}>Learn more</button>
       </div>
     </div>
   );

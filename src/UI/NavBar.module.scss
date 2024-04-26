@@ -8,7 +8,7 @@
 }
 
 .nav-links-ul {
-  background-color: white;
+  // background-color: rgb(113, 113, 113);
   display: flex;
   align-items: center;
   padding: 3rem 4rem;
@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   gap: 5rem;
+
   // background-color: green;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .picture {
-  width: 5rem;
+  width: 12rem;
   height: auto;
 }
 
@@ -47,13 +48,14 @@
 }
 
 .link {
-  color: black;
+  // color: black;
+  color: white;
 }
 
 .link:hover {
-  color: palevioletred;
+  color: #8cbafa;
 }
 
 .link-active {
-  color: palevioletred;
+  color: #8cbafa;
 }

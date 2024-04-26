@@ -5,10 +5,11 @@
 
 .services-container {
   width: 100%;
-  background-color: palevioletred;
+  background-color: #465d7d;
   display: flex;
   padding: 20rem;
   gap: 20rem;
+  color: white;
 }
 
 .left-container {
@@ -121,4 +122,9 @@
   font-size: 2rem;
   color: black;
   // background-color: paleturquoise;
+}
+
+.button {
+  padding: 2rem 3rem;
+  align-self: start;
 }

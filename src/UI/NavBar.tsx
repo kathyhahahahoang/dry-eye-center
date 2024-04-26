@@ -1,5 +1,5 @@
 import styles from "./NavBar.module.scss";
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
@@ -26,6 +26,16 @@ function NavBar() {
                 }
               >
                 Dry eye disease
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dry-eye-disease"
+                className={({ isActive }) =>
+                  isActive ? `${styles["link-active"]}` : `${styles.link}`
+                }
+              >
+                Resources
               </NavLink>
             </li>
           </div>
