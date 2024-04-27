@@ -5,7 +5,7 @@
 
 .services-container {
   width: 100%;
-  background-color: #465d7d;
+  background-color: var(--color-blue-light);
   display: flex;
   padding: 20rem;
   gap: 20rem;
@@ -34,18 +34,18 @@
   flex-direction: column;
   gap: 4rem;
   h2 {
-    font-size: 4rem;
+    font-size: var(--font-h2-xl);
   }
 
-  h3 {
-    font-size: 3rem;
+  h4 {
+    font-size: var(--font-h4-xl);
   }
 }
 
 .service-container {
   width: 100%;
   height: 35rem;
-  background-color: lightblue;
+  background-color: var(--color-blue-med);
   display: flex;
 }
 
@@ -54,15 +54,16 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 6rem;
+  padding: 5rem;
 }
 
 .service {
-  font-size: 3rem;
+  font-size: var(--font-h4-xl);
+  line-height: var(--line-height-h4-xl);
 }
 
 .desc {
-  font-size: 2rem;
+  font-size: var(--font-xl);
 }
 .service-picture {
   width: 40%;
@@ -77,21 +78,21 @@
 .guarantee-container {
   width: 100%;
   height: 100%;
-  background-color: midnightblue;
   display: flex;
   flex-direction: column;
   gap: 8rem;
   padding: 20rem;
-  color: white;
+  color: var(--color-blue-med);
 }
 
 .guarantee-text-container {
   h2 {
-    font-size: 5rem;
+    font-size: var(--font-h2-xl);
   }
 
-  p {
-    font-size: 3rem;
+  h4 {
+    font-size: var(--font-h4-xl);
+    line-height: var(--line-height-h4-xl);
   }
 }
 
@@ -102,7 +103,7 @@
 }
 
 .guarantee-item {
-  background-color: lightcyan;
+  background-color: var(--color-blue-med);
   padding: 4rem;
   height: 40rem;
   display: flex;
@@ -111,17 +112,16 @@
 }
 
 .guarantee-title {
-  font-size: 3.6rem;
-  // background-color: rebeccapurple;
+  font-size: var(--font-h4-xl);
+  line-height: var(--line-height-h4-xl);
   height: 100%;
-  color: palevioletred;
+  color: white;
 }
 
 .guarantee-desc {
   height: 50%;
-  font-size: 2rem;
-  color: black;
-  // background-color: paleturquoise;
+  font-size: var(--font-xl);
+  color: white;
 }
 
 .button {

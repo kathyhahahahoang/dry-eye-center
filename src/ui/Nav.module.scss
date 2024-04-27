@@ -1,7 +1,9 @@
 .container {
   width: 100vw;
   padding: 3rem 4rem;
-
+  position: fixed;
+  z-index: 200;
+  background-color: white;
   transition: all 0.3s;
 }
 
@@ -39,7 +41,7 @@
 }
 
 .link {
-  color: #8cbafa;
+  color: var(--color-blue-med);
 }
 
 .link:hover {

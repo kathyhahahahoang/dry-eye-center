@@ -1,13 +1,21 @@
 :root {
-  --font-xl: 3rem;
-  --font-large: 2.4rem;
-  --font-med: 2rem;
-  --font-small: 1.6rem;
-  --font-xs: 1.2rem;
+  --color-blue-dark: #465d7d;
+  --color-blue-med: #8cbafa;
+  --color-blue-light: #bad6fc;
 
-  --line-height-large: 3.4rem;
-  --line-height-med: 3rem;
-  --line-height-small: 2.4rem;
+  --color-grey-dark: #262626;
+  --color-grey-med: #c0c0c0;
+  --color-grey-light: #f2f2f2;
+
+  --font-h1-xl: 8rem;
+  --font-h2-xl: 6rem;
+  --font-h3-xl: 4.4rem;
+  --font-h4-xl: 3.6rem;
+
+  --line-height-h4-xl: 4rem;
+
+  --font-xl: 2.4rem;
+  --font-large: 2rem;
 }
 
 * {
@@ -44,40 +52,3 @@ ul {
 a {
   text-decoration: none;
 }
-
-/* OPTION 1: RALEWAY AND OPEN SANS */
-/* html {
-  font-size: 62.5%;
-  background-color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-} */
-
-/* OPTION 2: PLAYFAIR AND LATO */
-/* html {
-  font-size: 62.5%;
-  background-color: white;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 400;
-} */

@@ -19,13 +19,13 @@
 }
 
 .header {
-  font-size: 7rem;
+  font-size: var(--font-h1-xl);
   font-weight: 700;
   color: #465d7d;
 }
 
 .subheader {
-  font-size: 3.6rem;
+  font-size: var(--font-h3-xl);
   font-weight: 500;
 }
 

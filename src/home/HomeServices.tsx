@@ -12,15 +12,15 @@ function HomeServices() {
         <div className={styles["right-container"]}>
           <div className={styles["text-container"]}>
             <h2>Struggling with dry eye disease?</h2>
-            <h3>
+            <h4>
               Whether your dry eye symptoms are mild or severe, we will
               continuously work with you until we achieve the highest level of
               vision and comfort attainable. What you can expect:
-            </h3>
+            </h4>
           </div>
           <div className={styles["service-container"]}>
             <div className={styles["service-name"]}>
-              <p className={styles.service}>Initial evaluation</p>
+              <h4 className={styles.service}>Initial evaluation</h4>
               <p className={styles.desc}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
                 dolorum nemo minus distinctio itaque reiciendis at! Voluptas
@@ -34,7 +34,7 @@ function HomeServices() {
           </div>
           <div className={styles["service-container"]}>
             <div className={styles["service-name"]}>
-              <p className={styles.service}>Long-term management</p>
+              <h4 className={styles.service}>Long-term management</h4>
               <p className={styles.desc}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
                 dolorum nemo minus distinctio itaque reiciendis at! Voluptas
@@ -48,9 +48,9 @@ function HomeServices() {
           </div>
           <div className={styles["service-container"]}>
             <div className={styles["service-name"]}>
-              <p className={styles.service}>
+              <h4 className={styles.service}>
                 Latest advancements in dry eye treatment technology
-              </p>
+              </h4>
               <p className={styles.desc}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
                 dolorum nemo minus distinctio itaque reiciendis at! Voluptas
@@ -67,36 +67,38 @@ function HomeServices() {
       <div className={styles["guarantee-container"]}>
         <div className={styles["guarantee-text-container"]}>
           <h2>Guarantee</h2>
-          <p>
+          <h4>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
             nobis ut distinctio nam ducimus sapiente unde? Itaque, vel sapiente
             sint veniam quod consequatur, cumque iusto sed quis fugit ipsam
             deleniti.
-          </p>
+          </h4>
         </div>
         <div className={styles["guarantee-items-container"]}>
           <div className={styles["guarantee-item"]}>
-            <p className={styles["guarantee-title"]}>High quality eye exam</p>
+            <h4 className={styles["guarantee-title"]}>High quality eye exam</h4>
             <p className={styles["guarantee-desc"]}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit
             </p>
           </div>
           <div className={styles["guarantee-item"]}>
-            <p className={styles["guarantee-title"]}>
+            <h4 className={styles["guarantee-title"]}>
               Prescription therapeutics
-            </p>
+            </h4>
             <p className={styles["guarantee-desc"]}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit
             </p>
           </div>
           <div className={styles["guarantee-item"]}>
-            <p className={styles["guarantee-title"]}>In-office procedures</p>
+            <h4 className={styles["guarantee-title"]}>In-office procedures</h4>
             <p className={styles["guarantee-desc"]}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit
             </p>
           </div>
           <div className={styles["guarantee-item"]}>
-            <p className={styles["guarantee-title"]}> Medical contact lenses</p>
+            <h4 className={styles["guarantee-title"]}>
+              Medical contact lenses
+            </h4>
             <p className={styles["guarantee-desc"]}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit
             </p>
