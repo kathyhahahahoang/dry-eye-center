@@ -1,8 +1,24 @@
-export const doctors = [
+import melanie from "../assets/images/melanie.jpg";
+import daddy from "../assets/images/daddy.jpg";
+
+export type DoctorsObject = {
+  name: string;
+  position: string;
+  school: string;
+  image?: string;
+  desc1: string;
+  desc2?: string;
+  desc3?: string;
+  desc4?: string;
+  desc5?: string;
+};
+
+export const doctors: DoctorsObject[] = [
   {
     name: "Dr. Melanie Frogozo, OD, FAAO, FSLS",
     position: "Optometrist",
     school: "University of Houston College of Optometry",
+    image: melanie,
     desc1:
       "Dr. Melanie Frogozo is an optometrist who is residency trained in the treatment and management of anterior segment disease through medically necessary contact and prosthetic lenses. Originally from Houston, she completed college at the University of Texas at Austin and optometry school at the University of Houston.",
     desc2:
@@ -18,6 +34,7 @@ export const doctors = [
     name: "Dr. Anthony Mac, OD, FAAO",
     position: "Optometrist",
     school: "Massachusetts College of Pharmacy and Health Sciences",
+    image: daddy,
     desc1:
       "Dr. Anthony Mac, OD, MPH is an optometrist practicing at Alamo Eye Care in San Antonio, Texas. He is thrilled to be delivering specialty and comprehensive eye care to the community.",
     desc2:
