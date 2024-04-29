@@ -5,22 +5,13 @@
   background-color: var(--color-blue-med);
   color: var(--color-grey-dark);
   display: flex;
+  justify-content: space-evenly;
 }
 
 .text-container {
-  width: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.text-center {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  width: 80%;
 
   h1 {
     font-size: var(--font-h1-xl);
