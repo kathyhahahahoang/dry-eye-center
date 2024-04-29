@@ -1,6 +1,6 @@
 import styles from "./AtHomeTreatments.module.scss";
 import glasses from "../assets/images/glasses.jpg";
-import { atHomeTreatments } from "../constants/atHomeTreatments";
+import { atHomeTreatments } from "../constants/atHomeTreatmentsInfo";
 
 function AtHomeTreatments() {
   return (

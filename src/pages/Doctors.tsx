@@ -1,5 +1,5 @@
 import styles from "./Doctors.module.scss";
-import { doctors } from "../constants/doctors";
+import { doctors } from "../constants/doctorsInfo";
 
 function Doctors() {
   return (

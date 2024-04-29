@@ -1,38 +1,22 @@
 .container {
-  // background-color: lavenderblush;
-  width: 100%;
-  height: 100%;
-  padding-top: 9rem;
   display: flex;
   flex-direction: column;
+  padding-top: 9rem;
 }
 
-// .header {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   position: relative;
-//   background-color: var(--color-blue-light);
-//   h1 {
-//     font-size: var(--font-h1-xl);
-//     position: absolute;
-//     bottom: 0rem;
-//     right: 2rem;
-//     color: var(--color-blue-dark);
-//   }
-// }
+.header {
+  padding: 20rem 4rem 4rem 4rem;
+}
 
 .title {
   font-size: var(--font-h1-xl);
-  padding: 20rem 4rem 4rem 4rem;
+
   color: var(--color-blue-dark);
 }
 
-.header-picture {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
+.subtitle {
+  font-size: var(--font-xl);
+  color: var(--color-grey-dark);
 }
 
 .treatment-container {
@@ -71,4 +55,14 @@
     font-size: var(--font-xl);
     line-height: var(--line-height-xl);
   }
+}
+
+.link {
+  font-size: var(--font-xl);
+  line-height: var(--line-height-xl);
+  color: inherit;
+}
+
+.link:hover {
+  color: red;
 }
