@@ -1,12 +1,12 @@
 import styles from "./HomeHeader.module.scss";
-import elderly3 from "../assets/images/elderly3.jpg";
+import elderly4 from "../assets/images/elderly4.jpg";
 
 function HomeHeader() {
   return (
     <div className={styles.container}>
       <div className={styles["picture-container"]}>
         <div className={styles.overlay} />
-        <img src={elderly3} className={styles.picture} />
+        <img src={elderly4} className={styles.picture} />
       </div>
       <div className={styles["text-container"]}>
         <h1 className={styles.header}>

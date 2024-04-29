@@ -6,11 +6,13 @@ import AtHomeTreatments from "./pages/AtHomeTreatments.tsx";
 import InOfficeTreatments from "./pages/InOfficeTreatments.tsx";
 import Contact from "./pages/Contact.tsx";
 import AppLayout from "./AppLayout.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 function App() {
   return (
     <>
       <BrowserRouter basename="/">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route element={<AppLayout />}>
