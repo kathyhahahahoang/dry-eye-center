@@ -6,8 +6,8 @@ function AtHomeTreatments() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <img src={glasses} className={styles["header-picture"]} />
-        <h1>At-home treatments</h1>
+        {/* <img src={glasses} className={styles["header-picture"]} /> */}
+        <h1 className={styles.title}>At-home treatments</h1>
       </div>
       {atHomeTreatments.map((el, i) => {
         return (
