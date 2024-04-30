@@ -4,6 +4,9 @@ import { doctors } from "../constants/doctorsInfo";
 function Doctors() {
   return (
     <div className={styles.container}>
+      <div className={styles.header}>
+        <h1 className={styles.title}>Our doctors</h1>
+      </div>
       {doctors.map((el, i) => {
         return (
           <div className={styles["doctor-container"]} key={i}>

@@ -7,6 +7,15 @@
   padding-top: 9rem;
 }
 
+.header {
+  padding: 20rem 4rem 4rem 4rem;
+}
+
+.title {
+  font-size: var(--font-h1-xl);
+  color: var(--color-blue-dark);
+}
+
 .doctor-container {
   display: flex;
   gap: 5rem;
@@ -14,7 +23,7 @@
   background-color: var(--color-blue-light);
 }
 
-.doctor-container:first-of-type + .doctor-container {
+.doctor-container + .doctor-container {
   background-color: white;
   color: var(--color-grey-dark);
 }
