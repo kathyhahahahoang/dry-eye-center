@@ -7,6 +7,7 @@ import InOfficeTreatments from "./pages/InOfficeTreatments.tsx";
 import Contact from "./pages/Contact.tsx";
 import AppLayout from "./AppLayout.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
+import Resources from "./pages/Resources.tsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route element={<AppLayout />}>
             <Route path="/doctors" element={<Doctors />} />
             <Route path="/dry-eye-disease" element={<DryEyeDisease />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/at-home-treatments" element={<AtHomeTreatments />} />
             <Route
               path="/in-office-treatments"
