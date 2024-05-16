@@ -1,11 +1,12 @@
 import styles from "./Doctors.module.scss";
+import "../index.css";
 import { doctors } from "../constants/doctorsInfo";
 
 function Doctors() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Our doctors</h1>
+        <h1 className={`${styles.title}`}>Our doctors</h1>
       </div>
       {doctors.map((el, i) => {
         return (

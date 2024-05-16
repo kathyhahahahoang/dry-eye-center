@@ -8,7 +8,7 @@
 }
 
 .header {
-  padding: 20rem 4rem 4rem 4rem;
+  padding: 20rem 6rem 4rem 4rem;
 }
 
 .title {
@@ -60,4 +60,19 @@
   width: 100%;
   height: 60rem;
   object-fit: cover;
+}
+
+.row {
+  width: var(--row-width);
+  background-color: pink;
+  display: flex;
+}
+
+.col-1-of-4 {
+  width: var(--col-1-of-4);
+  background-color: palegreen;
+}
+.col-2-of-4 {
+  width: var(--col-2-of-4);
+  background-color: navy;
 }

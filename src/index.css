@@ -18,6 +18,9 @@
   --font-large: 2rem;
 
   --line-height-xl: 3.4rem;
+
+  --gutter-row: 6rem;
+  --gutter-column: 8rem;
 }
 
 * {
@@ -53,4 +56,57 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.row {
+  background-color: pink;
+  max-width: calc(100% - 8rem);
+  margin: 0 auto;
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: var(--gutter-row);
+  }
+}
+
+[class^="col-"] {
+  &:not(:last-child) {
+    margin-right: var(--gutter-column);
+  }
+}
+
+.col-1-of-2 {
+  width: calc((100% - var(--gutter-column)) / 2);
+  background-color: rosybrown;
+}
+
+.col-1-of-3 {
+  width: calc((100% - 2 * var(--gutter-column)) / 3);
+  background-color: lemonchiffon;
+}
+
+.col-2-of-3 {
+  width: calc(
+    2 * ((100% - 2 * var(--gutter-column)) / 3) + var(--gutter-column)
+  );
+  background-color: coral;
+}
+
+.col-1-of-4 {
+  width: calc((100% - 3 * var(--gutter-column)) / 4);
+  background-color: indigo;
+}
+
+.col-2-of-4 {
+  width: calc(
+    2 * ((100% - 3 * var(--gutter-column)) / 4) + var(--gutter-column)
+  );
+  background-color: #465d7d;
+}
+
+.col-3-of-4 {
+  width: calc(
+    3 * ((100% - 3 * var(--gutter-column)) / 4) + 2 * var(--gutter-column)
+  );
+  background-color: #1ec848;
 }
