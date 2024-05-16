@@ -17,19 +17,25 @@ function InOfficeTreatments() {
       {inOfficeTreatments.map((el, i) => {
         return (
           <div className={styles["treatment-container"]} key={i}>
-            <div className={styles["treatment-picture"]}>
-              <img src={glasses} />
-            </div>
-            <div className={styles["treatment-text"]}>
-              <h3>{el.title}</h3>
-              <p>{el.desc}</p>
-              {el.price && <p>{el.price}</p>}
-              {el.link && (
-                <NavLink to="/contact" className={styles.link}>
-                  {el.link}
-                  <span> &rarr;</span>
-                </NavLink>
-              )}
+            <div className={"row"}>
+              <div className={"col-1-of-3"}>
+                <div className={styles["treatment-picture"]}>
+                  <img src={glasses} />
+                </div>
+              </div>
+              <div className={"col-2-of-3"}>
+                <div className={styles["treatment-text"]}>
+                  <h3>{el.title}</h3>
+                  <p>{el.desc}</p>
+                  {el.price && <p>{el.price}</p>}
+                  {el.link && (
+                    <NavLink to="/contact" className={styles.link}>
+                      {el.link}
+                      <span> &rarr;</span>
+                    </NavLink>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         );
@@ -39,3 +45,20 @@ function InOfficeTreatments() {
 }
 
 export default InOfficeTreatments;
+
+{
+  /* <div className={styles["treatment-picture"]}>
+<img src={glasses} />
+</div>
+<div className={styles["treatment-text"]}>
+<h3>{el.title}</h3>
+<p>{el.desc}</p>
+{el.price && <p>{el.price}</p>}
+{el.link && (
+  <NavLink to="/contact" className={styles.link}>
+    {el.link}
+    <span> &rarr;</span>
+  </NavLink>
+)}
+</div> */
+}
