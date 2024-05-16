@@ -12,14 +12,20 @@ function AtHomeTreatments() {
       {atHomeTreatments.map((el, i) => {
         return (
           <div className={styles["treatment-container"]} key={i}>
-            <div className={styles["treatment-picture"]}>
-              <img src={glasses} />
-            </div>
-            <div className={styles["treatment-text"]}>
-              <h3>{el.title}</h3>
-              <p>{el.desc1}</p>
-              {el.desc2 && <p>{el.desc2}</p>}
-              {el.desc3 && <p>{el.desc3}</p>}
+            <div className={"row"}>
+              <div className={"col-1-of-3"}>
+                <div className={styles["treatment-picture"]}>
+                  <img src={glasses} />
+                </div>
+              </div>
+              <div className={"col-2-of-3"}>
+                <div className={styles["treatment-text"]}>
+                  <h3>{el.title}</h3>
+                  <p>{el.desc1}</p>
+                  {el.desc2 && <p>{el.desc2}</p>}
+                  {el.desc3 && <p>{el.desc3}</p>}
+                </div>
+              </div>
             </div>
           </div>
         );
@@ -29,3 +35,19 @@ function AtHomeTreatments() {
 }
 
 export default AtHomeTreatments;
+
+// {atHomeTreatments.map((el, i) => {
+//   return (
+//     <div className={styles["treatment-container"]} key={i}>
+//       <div className={styles["treatment-picture"]}>
+//         <img src={glasses} />
+//       </div>
+//       <div className={styles["treatment-text"]}>
+//         <h3>{el.title}</h3>
+//         <p>{el.desc1}</p>
+//         {el.desc2 && <p>{el.desc2}</p>}
+//         {el.desc3 && <p>{el.desc3}</p>}
+//       </div>
+//     </div>
+//   );
+// })}

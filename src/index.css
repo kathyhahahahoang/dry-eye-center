@@ -59,7 +59,7 @@ a {
 }
 
 .row {
-  background-color: pink;
+  /* background-color: pink; */
   max-width: calc(100% - 8rem);
   margin: 0 auto;
   display: flex;
@@ -77,36 +77,36 @@ a {
 
 .col-1-of-2 {
   width: calc((100% - var(--gutter-column)) / 2);
-  background-color: rosybrown;
+  /* background-color: rosybrown; */
 }
 
 .col-1-of-3 {
   width: calc((100% - 2 * var(--gutter-column)) / 3);
-  background-color: lemonchiffon;
+  /* background-color: lemonchiffon; */
 }
 
 .col-2-of-3 {
   width: calc(
     2 * ((100% - 2 * var(--gutter-column)) / 3) + var(--gutter-column)
   );
-  background-color: coral;
+  /* background-color: coral; */
 }
 
 .col-1-of-4 {
   width: calc((100% - 3 * var(--gutter-column)) / 4);
-  background-color: indigo;
+  /* background-color: indigo; */
 }
 
 .col-2-of-4 {
   width: calc(
     2 * ((100% - 3 * var(--gutter-column)) / 4) + var(--gutter-column)
   );
-  background-color: #465d7d;
+  /* background-color: #465d7d; */
 }
 
 .col-3-of-4 {
   width: calc(
     3 * ((100% - 3 * var(--gutter-column)) / 4) + 2 * var(--gutter-column)
   );
-  background-color: #1ec848;
+  /* background-color: #1ec848; */
 }
