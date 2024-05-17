@@ -1,0 +1,49 @@
+.container {
+  //   background-color: peru;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 20rem 0;
+}
+
+.title-container {
+  //   background-color: palevioletred;
+  padding: 0 4rem;
+  color: var(--color-blue-dark);
+
+  h2 {
+    font-size: var(--font-h2-xl);
+  }
+
+  h4 {
+    font-size: var(--font-h4-xl);
+  }
+}
+
+.guarantee-item {
+  background-color: var(--color-blue-med);
+  padding: 4rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.guarantee-title {
+  font-size: var(--font-h4-xl);
+  line-height: var(--line-height-h4-xl);
+  height: 100%;
+  color: white;
+}
+
+.guarantee-desc {
+  height: 50%;
+  font-size: var(--font-xl);
+  color: white;
+}
+
+.button {
+  align-self: start;
+  padding: 2rem 5rem;
+  margin-left: 4rem;
+}

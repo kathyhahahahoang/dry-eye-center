@@ -1,4 +1,5 @@
 import Footer from "../ui/Footer.tsx";
+import HomeGuarantee from "./HomeGuarantee.tsx";
 import HomeHeader from "./HomeHeader.tsx";
 import HomeNavBar from "./HomeNavBar.tsx";
 import HomeServices from "./HomeServices.tsx";
@@ -11,6 +12,8 @@ function HomeContainer() {
       <HomeHeader />
       <HomeSubheader />
       <HomeServices />
+
+      <HomeGuarantee />
       <Footer />
     </>
   );

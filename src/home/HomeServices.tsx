@@ -6,146 +6,72 @@ function HomeServices() {
   return (
     <div className={styles.container}>
       <div className={styles["services-container"]}>
-        <div className={styles["left-container"]}>
-          <img src={eyes} />
-        </div>
-        <div className={styles["right-container"]}>
-          <div className={styles["text-container"]}>
-            <h2>Struggling with dry eye disease?</h2>
-            <h4>
-              Whether your dry eye symptoms are mild or severe, we will
-              continuously work with you until we achieve the highest level of
-              vision and comfort attainable. What you can expect:
-            </h4>
-          </div>
-          <div className={styles["service-container"]}>
-            <div className={styles["service-name"]}>
-              <h4 className={styles.service}>Initial evaluation</h4>
-              <p className={styles.desc}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-                dolorum nemo minus distinctio itaque reiciendis at! Voluptas
-                numquam laborum, facilis minus laudantium quas totam ut
-                laboriosam, vel in ipsam aliquam?
-              </p>
-            </div>
-            <div className={styles["service-picture"]}>
-              <img src={glasses} />
-            </div>
-          </div>
-          <div className={styles["service-container"]}>
-            <div className={styles["service-name"]}>
-              <h4 className={styles.service}>Long-term management</h4>
-              <p className={styles.desc}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-                dolorum nemo minus distinctio itaque reiciendis at! Voluptas
-                numquam laborum, facilis minus laudantium quas totam ut
-                laboriosam, vel in ipsam aliquam?
-              </p>
-            </div>
-            <div className={styles["service-picture"]}>
+        <div className={"row"}>
+          <div className={"col-1-of-3"}>
+            <div className={styles["left-container"]}>
               <img src={eyes} />
             </div>
           </div>
-          <div className={styles["service-container"]}>
-            <div className={styles["service-name"]}>
-              <h4 className={styles.service}>
-                Latest advancements in dry eye treatment technology
-              </h4>
-              <p className={styles.desc}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-                dolorum nemo minus distinctio itaque reiciendis at! Voluptas
-                numquam laborum, facilis minus laudantium quas totam ut
-                laboriosam, vel in ipsam aliquam?
-              </p>
+          <div className={"col-2-of-3"}>
+            <div className={styles["right-container"]}>
+              <div className={styles["text-container"]}>
+                <h2>Struggling with dry eye disease?</h2>
+                <h4>
+                  Whether your dry eye symptoms are mild or severe, we will
+                  continuously work with you until we achieve the highest level
+                  of vision and comfort attainable. What you can expect:
+                </h4>
+              </div>
+              <div className={styles["service-container"]}>
+                <div className={styles["service-name"]}>
+                  <h4 className={styles.service}>Initial evaluation</h4>
+                  <p className={styles.desc}>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam dolorum nemo minus distinctio itaque reiciendis at!
+                    Voluptas numquam laborum, facilis minus laudantium quas
+                    totam ut laboriosam, vel in ipsam aliquam?
+                  </p>
+                </div>
+                <div className={styles["service-picture"]}>
+                  <img src={glasses} />
+                </div>
+              </div>
+              <div className={styles["service-container"]}>
+                <div className={styles["service-name"]}>
+                  <h4 className={styles.service}>Long-term management</h4>
+                  <p className={styles.desc}>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam dolorum nemo minus distinctio itaque reiciendis at!
+                    Voluptas numquam laborum, facilis minus laudantium quas
+                    totam ut laboriosam, vel in ipsam aliquam?
+                  </p>
+                </div>
+                <div className={styles["service-picture"]}>
+                  <img src={eyes} />
+                </div>
+              </div>
+              <div className={styles["service-container"]}>
+                <div className={styles["service-name"]}>
+                  <h4 className={styles.service}>
+                    Latest advancements in dry eye treatment technology
+                  </h4>
+                  <p className={styles.desc}>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Totam dolorum nemo minus distinctio itaque reiciendis at!
+                    Voluptas numquam laborum, facilis minus laudantium quas
+                    totam ut laboriosam, vel in ipsam aliquam?
+                  </p>
+                </div>
+                <div className={styles["service-picture"]}>
+                  <img src={glasses} />
+                </div>
+              </div>
             </div>
-            <div className={styles["service-picture"]}>
-              <img src={glasses} />
-            </div>
           </div>
         </div>
-      </div>
-      <div className={styles["guarantee-container"]}>
-        <div className={styles["guarantee-text-container"]}>
-          <h2>Guarantee</h2>
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-            nobis ut distinctio nam ducimus sapiente unde? Itaque, vel sapiente
-            sint veniam quod consequatur, cumque iusto sed quis fugit ipsam
-            deleniti.
-          </h4>
-        </div>
-        <div className={styles["guarantee-items-container"]}>
-          <div className={styles["guarantee-item"]}>
-            <h4 className={styles["guarantee-title"]}>High quality eye exam</h4>
-            <p className={styles["guarantee-desc"]}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit
-            </p>
-          </div>
-          <div className={styles["guarantee-item"]}>
-            <h4 className={styles["guarantee-title"]}>
-              Prescription therapeutics
-            </h4>
-            <p className={styles["guarantee-desc"]}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit
-            </p>
-          </div>
-          <div className={styles["guarantee-item"]}>
-            <h4 className={styles["guarantee-title"]}>In-office procedures</h4>
-            <p className={styles["guarantee-desc"]}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit
-            </p>
-          </div>
-          <div className={styles["guarantee-item"]}>
-            <h4 className={styles["guarantee-title"]}>
-              Medical contact lenses
-            </h4>
-            <p className={styles["guarantee-desc"]}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit
-            </p>
-          </div>
-        </div>
-        <button className={styles.button}>Learn more</button>
       </div>
     </div>
   );
 }
 
 export default HomeServices;
-
-{
-  /* <div className={styles["guarantee-container"]}>
-<div className={styles["picture-container"]}>
-  <img src={glasses} />
-</div>
-<div className={styles["text-container"]}>
-  <div className={styles["text-container-center"]}>
-    <h3>
-      Whether your dry eye symptoms are mild or severe, we will
-      continuously work with you until we achieve the highest level of
-      vision and comfort attainable. Our dry eye services include:
-    </h3>
-    <ul>
-      <li>- Initial evaluations</li>
-      <li>- Long-term management</li>
-      <li>- Latest treatments in dry eye disease</li>
-    </ul>
-  </div>
-</div>
-</div>
-<div className={styles["guarantee-container"]}>
-<div className={styles["picture-container"]}>
-  <img src={eyes} />
-</div>
-<div className={styles["text-container"]}>
-  <div className={styles["text-container-center"]}>
-    <h3>We guarantee:</h3>
-    <ul>
-      <li>- High quality eye exam</li>
-      <li>- Dry eye evaluation with management</li>
-      <li>- Expert contact lens fittings</li>
-      <li>- Eyeglasses</li>
-    </ul>
-  </div>
-</div>
-</div> */
-}
