@@ -19,7 +19,7 @@
 .doctor-container {
   display: flex;
   gap: 5rem;
-  padding: 10rem 4rem;
+  padding: 10rem 0;
   background-color: var(--color-blue-light);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .text-container {
-  width: 70%;
+  // width: 70%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -53,7 +53,7 @@
 }
 
 .pic-container {
-  width: 30%;
+  // width: 30%;
 }
 
 .picture {

@@ -11,20 +11,26 @@ function Doctors() {
       {doctors.map((el, i) => {
         return (
           <div className={styles["doctor-container"]} key={i}>
-            <div className={styles["text-container"]}>
-              <div className={styles.intro}>
-                <h3>{el.name}</h3>
-                <h4>{el.position}</h4>
-                <h4>{el.school}</h4>
+            <div className={"row"}>
+              <div className={"col-2-of-3"}>
+                <div className={styles["text-container"]}>
+                  <div className={styles.intro}>
+                    <h3>{el.name}</h3>
+                    <h4>{el.position}</h4>
+                    <h4>{el.school}</h4>
+                  </div>
+                  <p>{el.desc1}</p>
+                  <p>{el.desc2}</p>
+                  <p>{el.desc3}</p>
+                  <p>{el.desc4}</p>
+                  <p>{el.desc5}</p>
+                </div>
               </div>
-              <p>{el.desc1}</p>
-              <p>{el.desc2}</p>
-              <p>{el.desc3}</p>
-              <p>{el.desc4}</p>
-              <p>{el.desc5}</p>
-            </div>
-            <div className={styles["pic-container"]}>
-              <img src={el.image} className={styles.picture} />
+              <div className={"col-1-of-3"}>
+                <div className={styles["pic-container"]}>
+                  <img src={el.image} className={styles.picture} />
+                </div>
+              </div>
             </div>
           </div>
         );
@@ -34,6 +40,24 @@ function Doctors() {
 }
 
 export default Doctors;
+
+{
+  /* <div className={styles["text-container"]}>
+<div className={styles.intro}>
+  <h3>{el.name}</h3>
+  <h4>{el.position}</h4>
+  <h4>{el.school}</h4>
+</div>
+<p>{el.desc1}</p>
+<p>{el.desc2}</p>
+<p>{el.desc3}</p>
+<p>{el.desc4}</p>
+<p>{el.desc5}</p>
+</div>
+<div className={styles["pic-container"]}>
+<img src={el.image} className={styles.picture} />
+</div> */
+}
 
 {
   /* <div className={styles["doctor-container"]}>
