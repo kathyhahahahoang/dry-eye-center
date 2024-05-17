@@ -19,6 +19,7 @@
 
   --line-height-xl: 3.4rem;
 
+  --grid-width-xl: calc(100% - 8rem);
   --gutter-row: 6rem;
   --gutter-column: 8rem;
 }
@@ -59,19 +60,20 @@ a {
 }
 
 .row {
-  /* background-color: pink; */
-  max-width: calc(100% - 8rem);
+  max-width: var(--grid-width-xl);
   margin: 0 auto;
-  display: flex;
 
   &:not(:last-child) {
     margin-bottom: var(--gutter-row);
   }
-}
 
-[class^="col-"] {
-  &:not(:last-child) {
-    margin-right: var(--gutter-column);
+  [class^="col-"] {
+    float: left;
+    /* background-color: lawngreen; */
+
+    &:not(:last-child) {
+      margin-right: var(--gutter-column);
+    }
   }
 }
 
