@@ -19,9 +19,9 @@
 
   --line-height-xl: 3.4rem;
 
-  --grid-width-xl: calc(100% - 8rem);
+  --grid-width-xl: calc(100% - 28rem);
   --gutter-row: 6rem;
-  --gutter-column: 8rem;
+  --gutter-column: 10rem;
 }
 
 * {

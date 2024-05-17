@@ -1,5 +1,4 @@
 .container {
-  //   background-color: pink;
   width: 100%;
   height: 100%;
   display: flex;
@@ -8,7 +7,7 @@
 }
 
 .header {
-  padding: 20rem 6rem 4rem 4rem;
+  padding: 20rem 14rem 4rem 14rem;
 }
 
 .title {
@@ -17,8 +16,6 @@
 }
 
 .doctor-container {
-  // display: flex;
-  // gap: 5rem;
   padding: 10rem 0;
   background-color: var(--color-blue-light);
 }
@@ -29,7 +26,6 @@
 }
 
 .text-container {
-  // width: 70%;
   display: flex;
   flex-direction: column;
   gap: 3rem;

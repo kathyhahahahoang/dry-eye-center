@@ -1,17 +1,12 @@
 .container {
-  width: 100%;
   background-color: var(--color-grey-dark);
   color: white;
   display: flex;
-  padding: 10rem 4rem 6rem 4rem;
-}
-
-.left-container {
-  width: 50%;
+  flex-direction: column;
+  padding: 10rem 0;
 }
 
 .logo-container {
-  // background-color: pink;
   display: flex;
   gap: 4rem;
   align-items: center;
@@ -28,12 +23,13 @@
 .copyright {
   padding-top: 10rem;
   font-size: 1.4rem;
+  margin-left: 14rem;
 }
 
 .links-container {
-  width: 50%;
   display: flex;
-  justify-content: space-between;
+  gap: 8rem;
+  justify-content: flex-end;
 }
 
 .ul-container {
