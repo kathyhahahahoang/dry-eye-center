@@ -12,7 +12,6 @@ function HomeContainer() {
       <HomeHeader />
       <HomeSubheader />
       <HomeServices />
-
       <HomeGuarantee />
       <Footer />
     </>

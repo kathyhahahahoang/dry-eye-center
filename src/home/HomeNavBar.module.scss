@@ -4,6 +4,7 @@
   position: fixed;
   z-index: 200;
   transition: all 0.3s;
+  background-color: white;
 }
 
 .container-scrolled {
@@ -51,7 +52,8 @@
 }
 
 .link {
-  color: white;
+  // color: white;
+  color: #8cbafa;
 }
 
 .link-scrolled {
