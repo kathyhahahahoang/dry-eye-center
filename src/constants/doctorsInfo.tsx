@@ -15,7 +15,7 @@ export type DoctorsObject = {
 
 export const doctors: DoctorsObject[] = [
   {
-    name: "Dr. Melanie Frogozo, OD, FAAO, FSLS",
+    name: "Melanie Frogozo, OD, FAAO, FSLS",
     position: "Optometrist",
     school: "University of Houston College of Optometry",
     image: melanie,
@@ -31,7 +31,7 @@ export const doctors: DoctorsObject[] = [
       "Additionally, she volunteers her time at Haven for Hope I Care San Antonio Clinic. When she is not seeing patients, Dr. Frogozo enjoys spending time with her husband Jon, daughter Teal, and their two cats Ilsa and Mr. Big. She also enjoys practicing ashthanga yoga and ballet. ",
   },
   {
-    name: "Dr. Anthony Mac, OD, FAAO",
+    name: "Anthony Mac, OD, FAAO",
     position: "Optometrist",
     school: "Massachusetts College of Pharmacy and Health Sciences",
     image: daddy,

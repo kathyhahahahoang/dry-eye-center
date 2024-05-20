@@ -28,12 +28,13 @@ function InOfficeTreatments() {
                 <p>{el.desc}</p>
                 {el.price && <p>{el.price}</p>}
                 {el.link && (
-                  <div className={styles["link-container"]}>
+                  <NavLink
+                    to="/contact"
+                    className={`${styles["link-container"]} link`}
+                  >
                     <RiPhoneFill className={styles.icon} />
-                    <NavLink to="/contact" className={styles.link}>
-                      {el.link}
-                    </NavLink>
-                  </div>
+                    {el.link}
+                  </NavLink>
                 )}
               </div>
             </div>

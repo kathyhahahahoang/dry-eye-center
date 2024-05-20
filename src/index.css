@@ -24,6 +24,7 @@
   --font-large: 2rem;
 
   --line-height-xl: 3.4rem;
+  --line-height-large: 2.6rem;
 
   --grid-width-xl: calc(100% - 28rem);
   --gutter-row: 6rem;
@@ -63,6 +64,22 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.link {
+  border: none;
+  padding: 2rem 3rem;
+  background-color: var(--color-orange-med);
+  color: white;
+  font-size: var(--font-xl);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  cursor: pointer;
+  background-color: var(--color-blue-dark);
+  transition: all 0.3s;
 }
 
 .row {

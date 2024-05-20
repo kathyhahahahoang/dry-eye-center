@@ -2,7 +2,7 @@ import styles from "./Banner.module.scss";
 
 type BannerProps = {
   title: string;
-  desc: string;
+  desc?: string;
   bgColor?: string;
   fontColor?: string;
 };

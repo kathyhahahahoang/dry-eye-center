@@ -59,24 +59,10 @@
 }
 
 .link-container {
+  align-self: start;
   display: flex;
   gap: 1rem;
   align-items: center;
-  background-color: var(--color-orange-med);
-  align-self: start;
-  padding: 2rem 3rem;
-  color: white;
-  border-radius: 5px;
-}
-
-.link {
-  font-size: var(--font-xl);
-  line-height: var(--line-height-xl);
-  color: inherit;
-}
-
-.link:hover {
-  background-color: var(--color-blue-dark);
 }
 
 .icon {

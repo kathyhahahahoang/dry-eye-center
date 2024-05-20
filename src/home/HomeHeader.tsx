@@ -1,6 +1,6 @@
 import styles from "./HomeHeader.module.scss";
-import elderly6 from "../assets/images/elderly6.jpg";
 import elderly7 from "../assets/images/elderly7.jpg";
+import { Link } from "react-router-dom";
 
 function HomeHeader() {
   return (
@@ -16,6 +16,9 @@ function HomeHeader() {
         <h3 className={styles.subheader}>
           Specializing in the assessment and treatment of dry eye disease
         </h3>
+        <Link to="/contact" className={"link"}>
+          Book an appointment
+        </Link>
       </div>
     </div>
   );

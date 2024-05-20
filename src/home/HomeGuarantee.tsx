@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./HomeGuarantee.module.scss";
 
 function HomeGuarantee() {
@@ -56,7 +57,9 @@ function HomeGuarantee() {
           </div>
         </div>
       </div>
-      <button className={styles.button}>Click me</button>
+      <Link to="/contact" className={`${styles.button} link`}>
+        Click me
+      </Link>
     </div>
   );
 }
