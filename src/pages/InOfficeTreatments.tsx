@@ -2,18 +2,18 @@ import styles from "./InOfficeTreatments.module.scss";
 import glasses from "../assets/images/glasses.jpg";
 import { inOfficeTreatments } from "../constants/inOfficeTreatmentsInfo";
 import { NavLink } from "react-router-dom";
+import Banner from "../ui/Banner";
 function InOfficeTreatments() {
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <h1 className={styles.title}>In-office treatments</h1>
-        <p className={styles.subtitle}>
-          At Alamo Eye Care, we offer a variety of in-office dry eye procedures
+      <Banner
+        title="In-office treatments"
+        desc="At Alamo Eye Care, we offer a variety of in-office dry eye procedures
           and treatments. From prescribed pharmaceutical therapeutic treatments
           to FDA approved procedures, we are happy to curate a treatment plan to
-          best fit your needs.
-        </p>
-      </div>
+          best fit your needs."
+        bgColor="var(--color-orange-extra-light)"
+      />
       {inOfficeTreatments.map((el, i) => {
         return (
           <div className={styles["treatment-container"]} key={i}>

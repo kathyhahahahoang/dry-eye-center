@@ -2,10 +2,16 @@
   --color-blue-dark: #465d7d;
   --color-blue-med: #8cbafa;
   --color-blue-light: #bad6fc;
+  --color-blue-extra-light: #eaf3fe;
 
   --color-grey-dark: #262626;
   --color-grey-med: #c0c0c0;
   --color-grey-light: #f2f2f2;
+
+  --color-orange-dark: #e1b87e;
+  --color-orange-med: #facc8c;
+  --color-orange-light: #fce0ba;
+  --color-orange-extra-light: #fef0dd;
 
   --font-h1-xl: 8rem;
   --font-h2-xl: 6rem;

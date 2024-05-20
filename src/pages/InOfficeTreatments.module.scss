@@ -1,22 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding-top: 9rem;
-}
-
-.header {
-  padding: 20rem 14rem 4rem 14rem;
-}
-
-.title {
-  font-size: var(--font-h1-xl);
-
-  color: var(--color-blue-dark);
-}
-
-.subtitle {
-  font-size: var(--font-xl);
-  color: var(--color-grey-dark);
 }
 
 .treatment-container {

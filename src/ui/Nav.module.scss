@@ -1,22 +1,27 @@
 .container {
   width: 100vw;
-  padding: 4rem 14rem 0 14rem;
-  margin: 0 auto;
+  padding: 4rem 14rem;
   position: fixed;
   z-index: 200;
+  transition: all 0.3s;
+  // background-color: white;
+}
+
+.container-scrolled {
   background-color: white;
   transition: all 0.3s;
+  width: 100%;
 }
 
 .nav-links-ul {
   display: flex;
   align-items: center;
+
   position: relative;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid var(--color-blue-dark);
+  //   background-color: lightblue;
 
   li {
-    font-size: var(--font-xl);
+    font-size: 2.4rem;
   }
 }
 
@@ -24,6 +29,8 @@
   display: flex;
   align-items: center;
   gap: 7rem;
+
+  // background-color: green;
 }
 
 .nav-links-center {
@@ -41,10 +48,16 @@
   margin-left: auto;
   display: flex;
   gap: 7rem;
+  // background-color: green;
 }
 
 .link {
-  color: var(--color-blue-med);
+  color: black;
+}
+
+.link-scrolled {
+  // color: #8cbafa;
+  color: black;
 }
 
 .link:hover {
@@ -52,5 +65,65 @@
 }
 
 .link-active {
-  color: black;
+  color: var(--color-orange-dark);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid;
 }
+
+/////////// SOLID WHITE BACKGROUND THAT DOESNT CHANGE WHEN SCROLLED ///////
+
+// .container {
+//   width: 100vw;
+//   padding: 4rem 14rem 0 14rem;
+//   margin: 0 auto;
+//   position: fixed;
+//   z-index: 200;
+//   background-color: white;
+//   transition: all 0.3s;
+// }
+
+// .nav-links-ul {
+//   display: flex;
+//   align-items: center;
+//   position: relative;
+//   padding-bottom: 4rem;
+
+//   li {
+//     font-size: var(--font-xl);
+//   }
+// }
+
+// .nav-links-left {
+//   display: flex;
+//   align-items: center;
+//   gap: 7rem;
+// }
+
+// .nav-links-center {
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+// .picture {
+//   width: 12rem;
+//   height: auto;
+// }
+
+// .nav-links-right {
+//   margin-left: auto;
+//   display: flex;
+//   gap: 7rem;
+// }
+
+// .link {
+//   color: var(--color-blue-med);
+// }
+
+// .link:hover {
+//   color: black;
+// }
+
+// .link-active {
+//   color: black;
+// }
