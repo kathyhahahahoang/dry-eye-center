@@ -68,7 +68,7 @@ function HomeNavBar() {
           </li>
           <li>
             <NavLink
-              to="/dry-eye-disease"
+              to="/resources"
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }

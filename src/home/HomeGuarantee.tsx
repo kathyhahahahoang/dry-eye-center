@@ -58,7 +58,7 @@ function HomeGuarantee() {
         </div>
       </div>
       <Link to="/contact" className={`${styles.button} link`}>
-        Click me
+        Book an appointment
       </Link>
     </div>
   );
