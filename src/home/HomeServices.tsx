@@ -16,11 +16,11 @@ function HomeServices() {
             <div className={styles["right-container"]}>
               <div className={styles["text-container"]}>
                 <h2>Struggling with dry eye disease?</h2>
-                <h4>
+                <p>
                   Whether your dry eye symptoms are mild or severe, we will
                   continuously work with you until we achieve the highest level
                   of vision and comfort attainable. What you can expect:
-                </h4>
+                </p>
               </div>
               <div className={styles["service-container"]}>
                 <div className={styles["service-name"]}>

@@ -1,5 +1,5 @@
 import styles from "./HomeHeader.module.scss";
-import elderly7 from "../assets/images/elderly7.jpg";
+import elderly10 from "../assets/images/elderly10.jpg";
 import { Link } from "react-router-dom";
 
 function HomeHeader() {
@@ -7,7 +7,7 @@ function HomeHeader() {
     <div className={styles.container}>
       <div className={styles["picture-container"]}>
         <div className={styles.overlay} />
-        <img src={elderly7} className={styles.picture} />
+        <img src={elderly10} className={styles.picture} />
       </div>
       <div className={styles["text-container"]}>
         <h1 className={styles.header}>

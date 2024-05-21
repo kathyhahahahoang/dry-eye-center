@@ -1,5 +1,4 @@
 .container {
-  //   background-color: peru;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -7,7 +6,6 @@
 }
 
 .title-container {
-  //   background-color: palevioletred;
   padding: 0 14rem;
   color: var(--color-blue-dark);
 
@@ -21,7 +19,7 @@
 }
 
 .guarantee-item {
-  background-color: var(--color-blue-med);
+  background-color: var(--color-blue-dark);
   padding: 4rem;
   height: 40rem;
   display: flex;
