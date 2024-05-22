@@ -33,10 +33,14 @@
 
   @media (max-width: 1800px) {
     padding: 0 8rem 10rem 8rem;
+    column-gap: 8rem;
+    row-gap: 8rem;
   }
 
   @media (max-width: 1400px) {
     padding: 0 4rem 10rem 4rem;
+    column-gap: 5rem;
+    row-gap: 5rem;
   }
 }
 
@@ -87,10 +91,12 @@
 
   @media (max-width: 1800px) {
     padding: 0 8rem 10rem 8rem;
+    gap: 8rem;
   }
 
   @media (max-width: 1400px) {
     padding: 0 4rem 10rem 4rem;
+    gap: 5rem;
   }
 }
 

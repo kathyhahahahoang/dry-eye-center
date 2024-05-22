@@ -75,12 +75,10 @@ a {
 
   @media (max-width: 1800px) {
     font-size: 6rem;
-    background-color: rebeccapurple;
   }
 
   @media (max-width: 1400px) {
     font-size: 5.4rem;
-    background-color: pink;
   }
 }
 
@@ -89,12 +87,10 @@ a {
 
   @media (max-width: 1800px) {
     font-size: 5rem;
-    background-color: rgb(51, 153, 138);
   }
 
   @media (max-width: 1400px) {
     font-size: 4.6rem;
-    background-color: rgb(204, 163, 125);
   }
 }
 
@@ -103,12 +99,10 @@ a {
 
   @media (max-width: 1800px) {
     font-size: 4rem;
-    background-color: rgb(74, 105, 154);
   }
 
   @media (max-width: 1400px) {
     font-size: 3.8rem;
-    background-color: rgb(213, 78, 125);
   }
 }
 
@@ -118,13 +112,11 @@ a {
 
   @media (max-width: 1800px) {
     font-size: 3.4rem;
-    background-color: rgb(141, 177, 221);
   }
 
   @media (max-width: 1400px) {
     font-size: 3rem;
     line-height: 3.4rem;
-    background-color: rgb(212, 234, 101);
   }
 }
 
@@ -146,10 +138,14 @@ a {
   border: none;
   padding: 2rem 3rem;
   background-color: var(--color-orange-med);
-  color: white;
+  color: black;
   font-size: var(--font-xl);
   border-radius: 5px;
   transition: all 0.3s;
+
+  @media (max-width: 1800px) {
+    font-size: var(--font-large);
+  }
 }
 
 .link:hover {
