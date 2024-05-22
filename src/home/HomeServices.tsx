@@ -16,7 +16,7 @@ function HomeServices() {
             <div className={styles["right-container"]}>
               <div className={styles["text-container"]}>
                 <h2 className={"h2"}>Struggling with dry eye disease?</h2>
-                <p>
+                <p className={"main-text"}>
                   Whether your dry eye symptoms are mild or severe, we will
                   continuously work with you until we achieve the highest level
                   of vision and comfort attainable. What you can expect:
@@ -25,7 +25,7 @@ function HomeServices() {
               <div className={styles["service-container"]}>
                 <div className={styles["service-name"]}>
                   <h4 className={"h4"}>Initial evaluation</h4>
-                  <p className={styles.desc}>
+                  <p className={"main-text"}>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Totam dolorum nemo minus distinctio itaque reiciendis at!
                     Voluptas numquam laborum, facilis minus laudantium quas
@@ -39,7 +39,7 @@ function HomeServices() {
               <div className={styles["service-container"]}>
                 <div className={styles["service-name"]}>
                   <h4 className={"h4"}>Long-term management</h4>
-                  <p className={styles.desc}>
+                  <p className={"main-text"}>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Totam dolorum nemo minus distinctio itaque reiciendis at!
                     Voluptas numquam laborum, facilis minus laudantium quas
@@ -55,7 +55,7 @@ function HomeServices() {
                   <h4 className={"h4"}>
                     Latest advancements in dry eye treatment technology
                   </h4>
-                  <p className={styles.desc}>
+                  <p className={"main-text"}>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Totam dolorum nemo minus distinctio itaque reiciendis at!
                     Voluptas numquam laborum, facilis minus laudantium quas

@@ -25,8 +25,8 @@ function InOfficeTreatments() {
             <div className={styles["treatment-details"]}>
               <div className={styles["treatment-details-center"]}>
                 <h3 className={"h3"}>{el.title}</h3>
-                <p>{el.desc}</p>
-                {el.price && <p>{el.price}</p>}
+                <p className={"main-text"}>{el.desc}</p>
+                {el.price && <p className={"main-text"}>{el.price}</p>}
                 {el.link && (
                   <NavLink
                     to="/contact"

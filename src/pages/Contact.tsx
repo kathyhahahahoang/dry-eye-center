@@ -11,23 +11,23 @@ function Contact() {
                 <h4 className={"h4"}>
                   Dry Eye Center of San Antonio <br /> at Alamo Eye Care
                 </h4>
-                <p>
+                <p className={"main-text"}>
                   1742 N. Loop 1604 E., Suite 117 <br />
                   San Antonio, TX 78232
                 </p>
               </div>
               <div className={styles["info-container"]}>
                 <h4 className={"h4"}>Contact us</h4>
-                <p>Telephone: (210)-403-9050</p>
-                <p>Fax: (210)-403-9939</p>
-                <p>alamoeyecare@gmail.com</p>
+                <p className={"main-text"}>Telephone: (210)-403-9050</p>
+                <p className={"main-text"}>Fax: (210)-403-9939</p>
+                <p className={"main-text"}>alamoeyecare@gmail.com</p>
               </div>
               <div className={styles["info-container"]}>
                 <h4 className={"h4"}>Business hours</h4>
-                <p>Monday - Thursday: 9am - 6pm</p>
-                <p>Friday: 9am - 3pm</p>
-                <p>Saturday: closed</p>
-                <p>Sunday: closed</p>
+                <p className={"main-text"}>Monday - Thursday: 9am - 6pm</p>
+                <p className={"main-text"}>Friday: 9am - 3pm</p>
+                <p className={"main-text"}>Saturday: closed</p>
+                <p className={"main-text"}>Sunday: closed</p>
               </div>
             </div>
           </div>

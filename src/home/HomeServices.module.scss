@@ -30,10 +30,6 @@
   flex-direction: column;
   gap: 2rem;
   color: var(--color-grey-dark);
-
-  p {
-    font-size: var(--font-xl);
-  }
 }
 
 .service-container {
@@ -51,10 +47,6 @@
   padding: 5rem;
 }
 
-.desc {
-  font-size: var(--font-xl);
-  line-height: var(--line-height-xl);
-}
 .service-picture {
   width: 40%;
 

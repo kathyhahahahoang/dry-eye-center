@@ -40,22 +40,12 @@
   @media (max-width: 1400px) {
     padding: 0 4rem;
   }
-
-  p {
-    font-size: var(--font-xl);
-    line-height: var(--line-height-xl);
-  }
 }
 
 .treatment-details-center {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  p {
-    font-size: var(--font-xl);
-    line-height: var(--line-height-xl);
-  }
 }
 
 .link-container {

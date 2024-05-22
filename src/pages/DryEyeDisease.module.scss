@@ -17,11 +17,6 @@
   @media (max-width: 1400px) {
     padding: 0 4rem;
   }
-
-  p {
-    font-size: var(--font-xl);
-    line-height: var(--line-height-xl);
-  }
 }
 
 .button {
@@ -60,8 +55,6 @@
 }
 
 .disease-detail {
-  font-size: var(--font-xl);
-  line-height: var(--line-height-xl);
   padding-left: 14rem;
   width: 75%;
 
@@ -95,11 +88,6 @@
   align-items: center;
   gap: 1rem;
   margin-left: -1rem;
-
-  p {
-    font-size: var(--font-xl);
-    line-height: var(--line-height-xl);
-  }
 }
 
 .icon {

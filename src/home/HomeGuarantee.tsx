@@ -20,7 +20,7 @@ function HomeGuarantee() {
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 High quality eye exam
               </h4>
-              <p className={styles["guarantee-desc"]}>
+              <p className={`${styles["guarantee-desc"]} main-text`}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>
             </div>
@@ -30,7 +30,7 @@ function HomeGuarantee() {
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 Prescription therapeutics
               </h4>
-              <p className={styles["guarantee-desc"]}>
+              <p className={`${styles["guarantee-desc"]} main-text`}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>
             </div>
@@ -40,7 +40,7 @@ function HomeGuarantee() {
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 In-office procedures
               </h4>
-              <p className={styles["guarantee-desc"]}>
+              <p className={`${styles["guarantee-desc"]} main-text`}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>
             </div>
@@ -50,7 +50,7 @@ function HomeGuarantee() {
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 Medical contact lenses
               </h4>
-              <p className={styles["guarantee-desc"]}>
+              <p className={`${styles["guarantee-desc"]} main-text`}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>
             </div>

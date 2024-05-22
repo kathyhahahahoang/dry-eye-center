@@ -14,11 +14,11 @@ function Doctors() {
                   <div className={styles.intro}>
                     <h3 className={"h3"}>{el.name}</h3>
                   </div>
-                  <p>{el.desc1}</p>
-                  <p>{el.desc2}</p>
-                  <p>{el.desc3}</p>
-                  <p>{el.desc4}</p>
-                  <p>{el.desc5}</p>
+                  <p className={"main-text"}>{el.desc1}</p>
+                  <p className={"main-text"}>{el.desc2}</p>
+                  <p className={"main-text"}>{el.desc3}</p>
+                  <p className={"main-text"}>{el.desc4}</p>
+                  <p className={"main-text"}>{el.desc5}</p>
                 </div>
               </div>
               <div className={"col-1-of-3"}>
