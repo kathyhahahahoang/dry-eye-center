@@ -49,7 +49,7 @@ function DryEyeDisease() {
       </div>
       <div className={styles["disease-types-container"]}>
         <div className={styles["disease-type"]}>
-          <h2>Sjogren's Syndrome</h2>
+          <h2 className={"h2"}>Sjogren's Syndrome</h2>
           <p className={styles["disease-detail"]}>
             Sjogren's syndrome is an autoimmune disorder which affects the
             entire body, but initially include typical symptoms of dry eyes and
@@ -63,7 +63,7 @@ function DryEyeDisease() {
             </div>
             <div className={"col-1-of-3"}>
               <div className={styles["symptoms-container"]}>
-                <h4>Symptoms include:</h4>
+                <h4 className={"h4"}>Symptoms include:</h4>
                 <div className={styles["symptoms-list"]}>
                   <RiArrowRightSLine className={styles.icon} />
                   <p>Itchiness</p>
@@ -88,7 +88,7 @@ function DryEyeDisease() {
             </div>
             <div className={"col-1-of-3"}>
               <div className={styles["treatments-container"]}>
-                <h4>Treatments include:</h4>
+                <h4 className={"h4"}>Treatments include:</h4>
                 <div className={styles["symptoms-list"]}>
                   <RiArrowRightSLine className={styles.icon} />
                   <p>Itchiness</p>
@@ -99,7 +99,7 @@ function DryEyeDisease() {
         </div>
 
         <div className={styles["disease-type"]}>
-          <h2>Ocular rosacea</h2>
+          <h2 className={"h2"}>Ocular rosacea</h2>
           <p className={styles["disease-detail"]}>
             Rosacea is a chronic skin condition that causes redness of the face.
             Ocular rosacea causes redness, irritation, and itching of the eyes.
@@ -117,7 +117,7 @@ function DryEyeDisease() {
             </div>
             <div className={"col-1-of-3"}>
               <div className={styles["symptoms-container"]}>
-                <h4>Symptoms include:</h4>
+                <h4 className={"h4"}>Symptoms include:</h4>
                 <div className={styles["symptoms-list"]}>
                   <RiArrowRightSLine className={styles.icon} />
                   <p>Itchiness</p>
@@ -142,7 +142,7 @@ function DryEyeDisease() {
             </div>
             <div className={"col-1-of-3"}>
               <div className={styles["treatments-container"]}>
-                <h4>Treatments include:</h4>
+                <h4 className={"h4"}>Treatments include:</h4>
                 <div className={styles["symptoms-list"]}>
                   <RiArrowRightSLine className={styles.icon} />
                   <p>Itchiness</p>
@@ -153,7 +153,7 @@ function DryEyeDisease() {
         </div>
 
         <div className={styles["disease-type"]}>
-          <h2>Demodex</h2>
+          <h2 className={"h2"}>Demodex</h2>
           <p className={styles["disease-detail"]}>
             Demodex is a small mite, or parasite that can reside in our hair
             follicles and sebaceous glands. Demodex is contracted and spread by
@@ -168,7 +168,7 @@ function DryEyeDisease() {
             </div>
             <div className={"col-1-of-3"}>
               <div className={styles["symptoms-container"]}>
-                <h4>Symptoms include:</h4>
+                <h4 className={"h4"}>Symptoms include:</h4>
                 <div className={styles["symptoms-list"]}>
                   <RiArrowRightSLine className={styles.icon} />
                   <p>Itchiness</p>
@@ -193,7 +193,7 @@ function DryEyeDisease() {
             </div>
             <div className={"col-1-of-3"}>
               <div className={styles["treatments-container"]}>
-                <h4>Treatments include:</h4>
+                <h4 className={"h4"}>Treatments include:</h4>
                 <div className={styles["symptoms-list"]}>
                   <RiArrowRightSLine className={styles.icon} />
                   <p>Itchiness</p>

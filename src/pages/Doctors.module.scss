@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 15rem;
-  // background-color: var(--color-blue-light);
 }
 
 .doctor-container {
@@ -20,14 +19,6 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-
-  h3 {
-    font-size: var(--font-h3-xl);
-  }
-
-  h4 {
-    font-size: var(--font-h4-xl);
-  }
 
   p {
     font-size: var(--font-large);

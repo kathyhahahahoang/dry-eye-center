@@ -31,10 +31,6 @@
   gap: 2rem;
   color: var(--color-grey-dark);
 
-  h2 {
-    font-size: var(--font-h2-xl);
-  }
-
   p {
     font-size: var(--font-xl);
   }
@@ -53,11 +49,6 @@
   flex-direction: column;
   gap: 2rem;
   padding: 5rem;
-}
-
-.service {
-  font-size: var(--font-h4-xl);
-  line-height: var(--line-height-h4-xl);
 }
 
 .desc {

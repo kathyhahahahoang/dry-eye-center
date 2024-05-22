@@ -5,8 +5,8 @@ function HomeGuarantee() {
   return (
     <div className={styles.container}>
       <div className={styles["title-container"]}>
-        <h2>Guarantee</h2>
-        <h4>
+        <h2 className={"h2"}>Guarantee</h2>
+        <h4 className={"h4"}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
           nobis ut distinctio nam ducimus sapiente unde? Itaque, vel sapiente
           sint veniam quod consequatur, cumque iusto sed quis fugit ipsam
@@ -17,7 +17,7 @@ function HomeGuarantee() {
         <div className={"row"}>
           <div className={"col-1-of-4"}>
             <div className={styles["guarantee-item"]}>
-              <h4 className={styles["guarantee-title"]}>
+              <h4 className={`${styles["guarantee-title"]} h4`}>
                 High quality eye exam
               </h4>
               <p className={styles["guarantee-desc"]}>
@@ -27,7 +27,7 @@ function HomeGuarantee() {
           </div>
           <div className={"col-1-of-4"}>
             <div className={styles["guarantee-item"]}>
-              <h4 className={styles["guarantee-title"]}>
+              <h4 className={`${styles["guarantee-title"]} h4`}>
                 Prescription therapeutics
               </h4>
               <p className={styles["guarantee-desc"]}>
@@ -37,7 +37,7 @@ function HomeGuarantee() {
           </div>
           <div className={"col-1-of-4"}>
             <div className={styles["guarantee-item"]}>
-              <h4 className={styles["guarantee-title"]}>
+              <h4 className={`${styles["guarantee-title"]} h4`}>
                 In-office procedures
               </h4>
               <p className={styles["guarantee-desc"]}>
@@ -47,7 +47,7 @@ function HomeGuarantee() {
           </div>
           <div className={"col-1-of-4"}>
             <div className={styles["guarantee-item"]}>
-              <h4 className={styles["guarantee-title"]}>
+              <h4 className={`${styles["guarantee-title"]} h4`}>
                 Medical contact lenses
               </h4>
               <p className={styles["guarantee-desc"]}>

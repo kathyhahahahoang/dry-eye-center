@@ -10,10 +10,10 @@ function HomeHeader() {
         <img src={elderly10} className={styles.picture} />
       </div>
       <div className={styles["text-container"]}>
-        <h1 className={styles.header}>
+        <h1 className={`${styles.header} h1`}>
           Dry Eye Center of San Antonio at Alamo Eye Care
         </h1>
-        <h3 className={styles.subheader}>
+        <h3 className={`${styles.subheader} h3`}>
           Specializing in the assessment and treatment of dry eye disease
         </h3>
         <Link to="/contact" className={"link"}>

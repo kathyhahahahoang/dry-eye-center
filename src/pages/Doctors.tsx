@@ -12,7 +12,7 @@ function Doctors() {
               <div className={"col-2-of-3"}>
                 <div className={styles["text-container"]}>
                   <div className={styles.intro}>
-                    <h3>{el.name}</h3>
+                    <h3 className={"h3"}>{el.name}</h3>
                   </div>
                   <p>{el.desc1}</p>
                   <p>{el.desc2}</p>

@@ -32,10 +32,6 @@
   align-items: center;
   justify-content: center;
 
-  h3 {
-    font-size: var(--font-h3-xl);
-  }
-
   p {
     font-size: var(--font-xl);
     line-height: var(--line-height-xl);
@@ -47,10 +43,6 @@
   flex-direction: column;
   gap: 2rem;
   padding: 0 12rem;
-
-  h3 {
-    font-size: var(--font-h3-xl);
-  }
 
   p {
     font-size: var(--font-xl);

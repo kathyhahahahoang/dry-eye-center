@@ -8,7 +8,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  // transform: translate(-50%, -50%);
+
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -17,14 +17,12 @@
 }
 
 .header {
-  font-size: var(--font-h1-xl);
   font-weight: 700;
   color: var(--color-blue-med);
   text-shadow: 1px 1px 14px rgba(0, 0, 0, 0.832);
 }
 
 .subheader {
-  font-size: var(--font-h3-xl);
   font-weight: 500;
   color: var(--color-grey-light);
   text-shadow: 1px 1px 14px rgba(0, 0, 0, 0.832);

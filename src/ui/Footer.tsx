@@ -9,7 +9,7 @@ function Footer() {
           <div className={"col-1-of-3"}>
             <div className={styles["logo-container"]}>
               <img src={logo} className={styles.logo} />
-              <h3>
+              <h3 className={"h3"}>
                 Dry Eye Center
                 <br />
                 of San Antonio

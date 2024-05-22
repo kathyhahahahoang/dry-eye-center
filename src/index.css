@@ -67,6 +67,23 @@ a {
   text-decoration: none;
 }
 
+.h1 {
+  font-size: var(--font-h1-xl);
+}
+
+.h2 {
+  font-size: var(--font-h2-xl);
+}
+
+.h3 {
+  font-size: var(--font-h3-xl);
+}
+
+.h4 {
+  font-size: var(--font-h4-xl);
+  line-height: var(--line-height-h4-xl);
+}
+
 .link {
   border: none;
   padding: 2rem 3rem;

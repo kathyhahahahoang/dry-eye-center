@@ -19,7 +19,7 @@ function AtHomeTreatments() {
             </div>
             <div className={styles["treatment-details"]}>
               <div className={styles["treatment-details-center"]}>
-                <h3>{el.title}</h3>
+                <h3 className={"h3"}>{el.title}</h3>
                 <p>{el.desc1}</p>
                 {el.desc2 && <p>{el.desc2}</p>}
                 {el.desc3 && <p>{el.desc3}</p>}

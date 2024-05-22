@@ -15,7 +15,7 @@ function HomeServices() {
           <div className={"col-2-of-3"}>
             <div className={styles["right-container"]}>
               <div className={styles["text-container"]}>
-                <h2>Struggling with dry eye disease?</h2>
+                <h2 className={"h2"}>Struggling with dry eye disease?</h2>
                 <p>
                   Whether your dry eye symptoms are mild or severe, we will
                   continuously work with you until we achieve the highest level
@@ -24,7 +24,7 @@ function HomeServices() {
               </div>
               <div className={styles["service-container"]}>
                 <div className={styles["service-name"]}>
-                  <h4 className={styles.service}>Initial evaluation</h4>
+                  <h4 className={"h4"}>Initial evaluation</h4>
                   <p className={styles.desc}>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Totam dolorum nemo minus distinctio itaque reiciendis at!
@@ -38,7 +38,7 @@ function HomeServices() {
               </div>
               <div className={styles["service-container"]}>
                 <div className={styles["service-name"]}>
-                  <h4 className={styles.service}>Long-term management</h4>
+                  <h4 className={"h4"}>Long-term management</h4>
                   <p className={styles.desc}>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Totam dolorum nemo minus distinctio itaque reiciendis at!
@@ -52,7 +52,7 @@ function HomeServices() {
               </div>
               <div className={styles["service-container"]}>
                 <div className={styles["service-name"]}>
-                  <h4 className={styles.service}>
+                  <h4 className={"h4"}>
                     Latest advancements in dry eye treatment technology
                   </h4>
                   <p className={styles.desc}>

@@ -7,9 +7,8 @@ function Contact() {
         <div className={"row"}>
           <div className={"col-1-of-3"}>
             <div className={styles["text-container"]}>
-              {/* <h1>Visit us</h1> */}
               <div className={styles["info-container"]}>
-                <h4>
+                <h4 className={"h4"}>
                   Dry Eye Center of San Antonio <br /> at Alamo Eye Care
                 </h4>
                 <p>
@@ -18,13 +17,13 @@ function Contact() {
                 </p>
               </div>
               <div className={styles["info-container"]}>
-                <h4>Contact us</h4>
+                <h4 className={"h4"}>Contact us</h4>
                 <p>Telephone: (210)-403-9050</p>
                 <p>Fax: (210)-403-9939</p>
                 <p>alamoeyecare@gmail.com</p>
               </div>
               <div className={styles["info-container"]}>
-                <h4>Business hours</h4>
+                <h4 className={"h4"}>Business hours</h4>
                 <p>Monday - Thursday: 9am - 6pm</p>
                 <p>Friday: 9am - 3pm</p>
                 <p>Saturday: closed</p>
