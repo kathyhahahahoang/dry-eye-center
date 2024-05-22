@@ -10,6 +10,14 @@
   flex-direction: column;
   gap: 2rem;
 
+  @media (max-width: 1800px) {
+    padding: 0 8rem;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 0 4rem;
+  }
+
   p {
     font-size: var(--font-xl);
     line-height: var(--line-height-xl);
@@ -29,6 +37,14 @@
 
   h2 {
     padding-left: 14rem;
+
+    @media (max-width: 1800px) {
+      padding-left: 8rem;
+    }
+
+    @media (max-width: 1400px) {
+      padding-left: 4rem;
+    }
   }
 }
 
@@ -48,6 +64,14 @@
   line-height: var(--line-height-xl);
   padding-left: 14rem;
   width: 75%;
+
+  @media (max-width: 1800px) {
+    padding-left: 8rem;
+  }
+
+  @media (max-width: 1400px) {
+    padding-left: 4rem;
+  }
 }
 
 .picture {

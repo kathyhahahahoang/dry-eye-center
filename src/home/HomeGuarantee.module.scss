@@ -8,6 +8,14 @@
 .title-container {
   padding: 0 14rem;
   color: var(--color-blue-dark);
+
+  @media (max-width: 1800px) {
+    padding: 0 8rem;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 0 4rem;
+  }
 }
 
 .guarantee-item {
@@ -33,4 +41,12 @@
 .button {
   align-self: start;
   margin-left: 14rem;
+
+  @media (max-width: 1800px) {
+    margin-left: 8rem;
+  }
+
+  @media (max-width: 1400px) {
+    margin-left: 4rem;
+  }
 }

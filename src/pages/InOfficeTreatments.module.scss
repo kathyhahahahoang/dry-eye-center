@@ -31,6 +31,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 12rem;
+
+  @media (max-width: 1800px) {
+    padding: 0 8rem;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 0 4rem;
+  }
 
   p {
     font-size: var(--font-xl);
@@ -42,7 +51,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 12rem;
 
   p {
     font-size: var(--font-xl);

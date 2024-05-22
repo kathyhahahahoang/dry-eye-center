@@ -5,6 +5,16 @@
   z-index: 200;
   transition: all 0.3s;
   // background-color: white;
+
+  @media (max-width: 1800px) {
+    padding: 4rem 8rem;
+    background-color: aquamarine;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 3rem 4rem;
+    background-color: rgb(164, 39, 135);
+  }
 }
 
 .container-scrolled {
@@ -18,10 +28,13 @@
   align-items: center;
 
   position: relative;
-  //   background-color: lightblue;
 
   li {
     font-size: 2.4rem;
+
+    @media (max-width: 1800px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -30,7 +43,13 @@
   align-items: center;
   gap: 7rem;
 
-  // background-color: green;
+  @media (max-width: 1800px) {
+    gap: 5rem;
+  }
+
+  @media (max-width: 1400px) {
+    gap: 3rem;
+  }
 }
 
 .nav-links-center {
@@ -48,22 +67,100 @@
   margin-left: auto;
   display: flex;
   gap: 7rem;
-  // background-color: green;
+
+  @media (max-width: 1800px) {
+    gap: 5rem;
+  }
+
+  @media (max-width: 1400px) {
+    gap: 3rem;
+  }
 }
 
 .link {
-  // color: white;
-  color: #8cbafa;
+  color: black;
 }
 
 .link-scrolled {
-  color: #8cbafa;
+  color: black;
 }
 
 .link:hover {
-  color: black;
+  color: var(--color-orange-dark);
 }
 
 .link-active {
-  color: black;
+  color: var(--color-orange-dark);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid;
 }
+
+// .container {
+//   width: 100vw;
+//   padding: 4rem 14rem;
+//   position: fixed;
+//   z-index: 200;
+//   transition: all 0.3s;
+//   // background-color: white;
+// }
+
+// .container-scrolled {
+//   background-color: white;
+//   transition: all 0.3s;
+//   width: 100%;
+// }
+
+// .nav-links-ul {
+//   display: flex;
+//   align-items: center;
+
+//   position: relative;
+//   //   background-color: lightblue;
+
+//   li {
+//     font-size: 2.4rem;
+//   }
+// }
+
+// .nav-links-left {
+//   display: flex;
+//   align-items: center;
+//   gap: 7rem;
+
+//   // background-color: green;
+// }
+
+// .nav-links-center {
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+// .picture {
+//   width: 12rem;
+//   height: auto;
+// }
+
+// .nav-links-right {
+//   margin-left: auto;
+//   display: flex;
+//   gap: 7rem;
+//   // background-color: green;
+// }
+
+// .link {
+//   // color: white;
+//   color: #8cbafa;
+// }
+
+// .link-scrolled {
+//   color: #8cbafa;
+// }
+
+// .link:hover {
+//   color: black;
+// }
+
+// .link-active {
+//   color: black;
+// }
