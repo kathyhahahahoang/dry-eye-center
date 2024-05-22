@@ -9,11 +9,7 @@ function Footer() {
           <div className={"col-1-of-3"}>
             <div className={styles["logo-container"]}>
               <img src={logo} className={styles.logo} />
-              <h3 className={"h3"}>
-                Dry Eye Center
-                <br />
-                of San Antonio
-              </h3>
+              <p className={styles.name}>Dry Eye Center of San Antonio</p>
             </div>
           </div>
           <div className={"col-2-of-3"}>

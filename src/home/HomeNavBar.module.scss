@@ -8,13 +8,16 @@
 
   @media (max-width: 1800px) {
     padding: 4rem 8rem;
-    background-color: aquamarine;
   }
 
   @media (max-width: 1400px) {
     padding: 3rem 4rem;
-    background-color: rgb(164, 39, 135);
   }
+
+  // @media (max-width: 1000px) {
+  //   padding: 3rem 2rem;
+  //   background-color: rgb(131, 183, 216);
+  // }
 }
 
 .container-scrolled {
@@ -30,11 +33,15 @@
   position: relative;
 
   li {
-    font-size: 2.4rem;
+    font-size: var(--font-xl);
 
     @media (max-width: 1800px) {
-      font-size: 2rem;
+      font-size: var(--font-large);
     }
+
+    // @media (max-width: 1400px) {
+    //   font-size: var(--font-med);
+    // }
   }
 }
 
@@ -61,6 +68,10 @@
 .picture {
   width: 12rem;
   height: auto;
+
+  @media (max-width: 1800px) {
+    width: 10rem;
+  }
 }
 
 .nav-links-right {
@@ -78,7 +89,7 @@
 }
 
 .link {
-  color: black;
+  color: white;
 }
 
 .link-scrolled {

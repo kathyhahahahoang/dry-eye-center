@@ -9,7 +9,7 @@ function Contact() {
             <div className={styles["text-container"]}>
               <div className={styles["info-container"]}>
                 <h4 className={"h4"}>
-                  Dry Eye Center of San Antonio <br /> at Alamo Eye Care
+                  Dry Eye Center of San Antonio at Alamo Eye Care
                 </h4>
                 <p className={"main-text"}>
                   1742 N. Loop 1604 E., Suite 117 <br />
