@@ -50,7 +50,9 @@
 .disease-type:nth-child(even) {
   .symptoms-container,
   .treatments-container {
-    background-color: var(--color-orange-light);
+    background-color: white;
+    border: 2px solid var(--color-orange-med);
+    color: var(--color-grey-dark);
   }
 }
 
