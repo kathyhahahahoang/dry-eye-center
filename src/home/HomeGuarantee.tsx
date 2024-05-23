@@ -20,6 +20,7 @@ function HomeGuarantee() {
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 High quality eye exam
               </h4>
+
               <p className={`${styles["guarantee-desc"]} main-text`}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>

@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 6rem;
   padding: 20rem 0;
+
+  @media (max-width: 1500px) {
+    padding: 10rem 0;
+  }
 }
 
 .title-container {
@@ -13,7 +17,7 @@
     padding: 0 8rem;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     padding: 0 4rem;
   }
 }
@@ -31,9 +35,10 @@
     gap: 4rem;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     padding: 2rem;
     gap: 2rem;
+    height: 30rem;
   }
 }
 
@@ -55,7 +60,7 @@
     margin-left: 8rem;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     margin-left: 4rem;
   }
 }

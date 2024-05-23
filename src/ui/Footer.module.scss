@@ -15,7 +15,7 @@
   gap: 4rem;
   align-items: center;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     gap: 3rem;
   }
 }
@@ -23,7 +23,7 @@
 .logo {
   width: 15rem;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     width: 10rem;
   }
 }
@@ -38,7 +38,7 @@
     font-size: 4rem;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     font-size: 3.4rem;
   }
 }
@@ -53,7 +53,7 @@
     padding-top: 8rem;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     margin-left: 4rem;
     padding-top: 6rem;
   }
