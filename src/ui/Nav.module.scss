@@ -12,6 +12,11 @@
 
   @media (max-width: 1500px) {
     padding: 3rem 4rem;
+    background-color: lightcoral;
+  }
+
+  @media (max-width: 1000px) {
+    background-color: rgb(170, 136, 147);
   }
 
   // @media (max-width: 1000px) {
@@ -39,6 +44,10 @@
       font-size: var(--font-large);
     }
 
+    @media (max-width: 1500px) {
+      font-size: var(--font-med);
+    }
+
     // @media (max-width: 1500px) {
     //   font-size: var(--font-med);
     // }
@@ -55,7 +64,7 @@
   }
 
   @media (max-width: 1500px) {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
@@ -72,6 +81,10 @@
   @media (max-width: 1800px) {
     width: 10rem;
   }
+
+  @media (max-width: 1500px) {
+    width: 8rem;
+  }
 }
 
 .nav-links-right {
@@ -84,7 +97,7 @@
   }
 
   @media (max-width: 1500px) {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
