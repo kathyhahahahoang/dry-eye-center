@@ -320,17 +320,17 @@ a {
 
 .width-container {
   display: flex;
-  margin: 0 auto;
-  width: var(--grid-width-xl);
+  width: 100%;
+  padding: 0 14rem;
   gap: var(--gutter-column-xl);
 
   @media (max-width: 1800px) {
-    width: var(--grid-width-large);
+    padding: 0 8rem;
     gap: var(--gutter-column-large);
   }
 
   @media (max-width: 1500px) {
-    width: var(--grid-width-med);
+    padding: 0 4rem;
     gap: var(--gutter-column-med);
   }
 }

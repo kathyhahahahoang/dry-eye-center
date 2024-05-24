@@ -77,3 +77,68 @@ export const ocularRosacea = {
   desc2:
     "The inflammation overlaps into blepharitis (inflammation of the eyelids) and can cause concurrent meibomian gland dysfunction. Depending on the severity, the treatments range from at-home lid scrubs and hot compress to in-office therapy with Mibo Thermoflo or the FDA approved IPL. See our in office treatments page for more information.",
 };
+
+export const dryEyeDiseaseSample = [
+  {
+    name: "Sjogren's Syndrome",
+    details: ` Sjogren's syndrome is an autoimmune disorder which affects the
+  entire body, but initially include typical symptoms of dry eyes and
+  dry mouth. Ninety percent of those diagnosed with Sjogren's syndrome
+  are female. It sometimes occurs in the presence of Lupus,
+  scleroderma, and rheumatoid arthritis.`,
+    symptoms: ["Itchiness", "Irritability", "Inflammation"],
+    treatments: ["Hot compress", "IPL"],
+  },
+  {
+    name: "Ocular rosacea",
+    details: `Rosacea is a chronic skin condition that causes redness of the face.
+    Ocular rosacea causes redness, irritation, and itching of the eyes.
+    Sometimes dry or irritated eyes are the first sign of rosacea. The
+    inflammation overlaps into blepharitis (inflammation of the eyelids)
+    and can cause concurrent meibomian gland dysfunction. Depending on
+    the severity, the treatments range from at-home lid scrubs and hot
+    compress to in-office therapy with Mibo Thermoflo or the FDA
+    approved IPL. See our in office treatments page for more
+    information.`,
+    symptoms: [
+      "Itchiness",
+      "Irritability",
+      "Inflammation",
+      "Itchiness",
+      "Irritability",
+      "Inflammation",
+    ],
+    treatments: ["Hot compress", "IPL", "IPL", "IPL", "IPL"],
+  },
+  {
+    name: "Sjogren's Syndrome",
+    details: ` Sjogren's syndrome is an autoimmune disorder which affects the
+  entire body, but initially include typical symptoms of dry eyes and
+  dry mouth. Ninety percent of those diagnosed with Sjogren's syndrome
+  are female. It sometimes occurs in the presence of Lupus,
+  scleroderma, and rheumatoid arthritis.`,
+    symptoms: ["Itchiness", "Irritability", "Inflammation"],
+    treatments: ["Hot compress", "IPL"],
+  },
+  {
+    name: "Ocular rosacea",
+    details: `Rosacea is a chronic skin condition that causes redness of the face.
+    Ocular rosacea causes redness, irritation, and itching of the eyes.
+    Sometimes dry or irritated eyes are the first sign of rosacea. The
+    inflammation overlaps into blepharitis (inflammation of the eyelids)
+    and can cause concurrent meibomian gland dysfunction. Depending on
+    the severity, the treatments range from at-home lid scrubs and hot
+    compress to in-office therapy with Mibo Thermoflo or the FDA
+    approved IPL. See our in office treatments page for more
+    information.`,
+    symptoms: [
+      "Itchiness",
+      "Irritability",
+      "Inflammation",
+      "Itchiness",
+      "Irritability",
+      "Inflammation",
+    ],
+    treatments: ["Hot compress", "IPL", "IPL", "IPL", "IPL"],
+  },
+];

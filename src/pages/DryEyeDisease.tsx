@@ -4,6 +4,8 @@ import styles from "./DryEyeDisease.module.scss";
 import home from "../assets/images/home.jpg";
 import { RiArrowRightSLine } from "@remixicon/react";
 
+import { dryEyeDiseaseSample } from "../constants/dryEyeDiseaseInfo";
+
 function DryEyeDisease() {
   return (
     <div className={styles.container}>
@@ -47,164 +49,223 @@ function DryEyeDisease() {
           Click here to take the OSDI
         </Link>
       </div>
-      <div className={styles["disease-types-container"]}>
-        <div className={styles["disease-type"]}>
-          <h2 className={"h2"}>Sjogren's Syndrome</h2>
-          <p className={`${styles["disease-detail"]} main-text`}>
-            Sjogren's syndrome is an autoimmune disorder which affects the
-            entire body, but initially include typical symptoms of dry eyes and
-            dry mouth. Ninety percent of those diagnosed with Sjogren's syndrome
-            are female. It sometimes occurs in the presence of Lupus,
-            scleroderma, and rheumatoid arthritis.
-          </p>
-          <div className={"row"}>
-            <div className={"col-1-of-3"}>
-              <img src={home} className={styles.picture} />
-            </div>
-            <div className={"col-1-of-3"}>
-              <div className={styles["symptoms-container"]}>
-                <h4 className={"h4"}>Symptoms include:</h4>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
+      <div className={styles["diseases-container"]}>
+        {dryEyeDiseaseSample.map((el, i) => {
+          return (
+            <div className={styles["disease-item"]} key={i}>
+              <div className={styles["disease-name"]}>
+                <h2 className={"h2"}>{el.name}</h2>
+                <p className={"main-text"}>{el.details}</p>
+              </div>
+              <div className={"width-container"}>
+                <div className={styles["disease-picture"]}>
+                  <img src={home} />
                 </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
+                <div className={styles["symptoms-container"]}>
+                  <h4 className={"h4"}>Symptoms include:</h4>
+                  {el.symptoms.map((symptom, i) => {
+                    return (
+                      <div className={styles["symptoms-list"]} key={i}>
+                        <RiArrowRightSLine className={styles.icon} />
+                        <p className={"main-text"}>{symptom}</p>
+                      </div>
+                    );
+                  })}
                 </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
+                <div className={styles["treatments-container"]}>
+                  {" "}
+                  <h4 className={"h4"}>Treatments include:</h4>
+                  {el.treatments.map((treatment, i) => {
+                    return (
+                      <div className={styles["treatments-list"]} key={i}>
+                        <RiArrowRightSLine className={styles.icon} />
+                        <p className={"main-text"}>{treatment}</p>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
-            <div className={"col-1-of-3"}>
-              <div className={styles["treatments-container"]}>
-                <h4 className={"h4"}>Treatments include:</h4>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles["disease-type"]}>
-          <h2 className={"h2"}>Ocular rosacea</h2>
-          <p className={`${styles["disease-detail"]} main-text`}>
-            Rosacea is a chronic skin condition that causes redness of the face.
-            Ocular rosacea causes redness, irritation, and itching of the eyes.
-            Sometimes dry or irritated eyes are the first sign of rosacea. The
-            inflammation overlaps into blepharitis (inflammation of the eyelids)
-            and can cause concurrent meibomian gland dysfunction. Depending on
-            the severity, the treatments range from at-home lid scrubs and hot
-            compress to in-office therapy with Mibo Thermoflo or the FDA
-            approved IPL. See our in office treatments page for more
-            information.
-          </p>
-          <div className={"row"}>
-            <div className={"col-1-of-3"}>
-              <img src={home} className={styles.picture} />
-            </div>
-            <div className={"col-1-of-3"}>
-              <div className={styles["symptoms-container"]}>
-                <h4 className={"h4"}>Symptoms include:</h4>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-              </div>
-            </div>
-            <div className={"col-1-of-3"}>
-              <div className={styles["treatments-container"]}>
-                <h4 className={"h4"}>Treatments include:</h4>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles["disease-type"]}>
-          <h2 className={"h2"}>Demodex</h2>
-          <p className={`${styles["disease-detail"]} main-text`}>
-            Demodex is a small mite, or parasite that can reside in our hair
-            follicles and sebaceous glands. Demodex is contracted and spread by
-            either direct contact or dust containing eggs. Demodex causes
-            symptoms such as: itching, foreign body sensation, redness,
-            crusting, blurry vision, and burning. All of these symptoms can
-            overlap with dry eye disease.
-          </p>
-          <div className={"row"}>
-            <div className={"col-1-of-3"}>
-              <img src={home} className={styles.picture} />
-            </div>
-            <div className={"col-1-of-3"}>
-              <div className={styles["symptoms-container"]}>
-                <h4 className={"h4"}>Symptoms include:</h4>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-              </div>
-            </div>
-            <div className={"col-1-of-3"}>
-              <div className={styles["treatments-container"]}>
-                <h4 className={"h4"}>Treatments include:</h4>
-                <div className={styles["symptoms-list"]}>
-                  <RiArrowRightSLine className={styles.icon} />
-                  <p className={"main-text"}>Itchiness</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
     </div>
   );
 }
 
 export default DryEyeDisease;
+
+{
+  /* <div className={styles["disease-item"]}>
+<div className={styles["disease-name"]}>
+  <h2 className={"h2"}>name</h2>
+  <p className={"main-text"}>desc</p>
+</div>
+<div className={"width-container"}>
+  <div className={styles["disease-picture"]}>
+    <img src={home} />
+  </div>
+  <div className={styles["symptoms-container"]}>symptoms</div>
+  <div className={styles["treatments-container"]}>treatments</div>
+</div>
+</div> */
+}
+
+{
+  /* <div className={styles["disease-types-container"]}>
+<div className={styles["disease-type"]}>
+  <h2 className={"h2"}>Sjogren's Syndrome</h2>
+  <p className={`${styles["disease-detail"]} main-text`}>
+    Sjogren's syndrome is an autoimmune disorder which affects the
+    entire body, but initially include typical symptoms of dry eyes and
+    dry mouth. Ninety percent of those diagnosed with Sjogren's syndrome
+    are female. It sometimes occurs in the presence of Lupus,
+    scleroderma, and rheumatoid arthritis.
+  </p>
+  <div className={"row"}>
+    <div className={"col-1-of-3"}>
+      <img src={home} className={styles.picture} />
+    </div>
+    <div className={"col-1-of-3"}>
+      <div className={styles["symptoms-container"]}>
+        <h4 className={"h4"}>Symptoms include:</h4>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+      </div>
+    </div>
+    <div className={"col-1-of-3"}>
+      <div className={styles["treatments-container"]}>
+        <h4 className={"h4"}>Treatments include:</h4>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className={styles["disease-type"]}>
+  <h2 className={"h2"}>Ocular rosacea</h2>
+  <p className={`${styles["disease-detail"]} main-text`}>
+    Rosacea is a chronic skin condition that causes redness of the face.
+    Ocular rosacea causes redness, irritation, and itching of the eyes.
+    Sometimes dry or irritated eyes are the first sign of rosacea. The
+    inflammation overlaps into blepharitis (inflammation of the eyelids)
+    and can cause concurrent meibomian gland dysfunction. Depending on
+    the severity, the treatments range from at-home lid scrubs and hot
+    compress to in-office therapy with Mibo Thermoflo or the FDA
+    approved IPL. See our in office treatments page for more
+    information.
+  </p>
+  <div className={"row"}>
+    <div className={"col-1-of-3"}>
+      <img src={home} className={styles.picture} />
+    </div>
+    <div className={"col-1-of-3"}>
+      <div className={styles["symptoms-container"]}>
+        <h4 className={"h4"}>Symptoms include:</h4>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+      </div>
+    </div>
+    <div className={"col-1-of-3"}>
+      <div className={styles["treatments-container"]}>
+        <h4 className={"h4"}>Treatments include:</h4>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className={styles["disease-type"]}>
+  <h2 className={"h2"}>Demodex</h2>
+  <p className={`${styles["disease-detail"]} main-text`}>
+    Demodex is a small mite, or parasite that can reside in our hair
+    follicles and sebaceous glands. Demodex is contracted and spread by
+    either direct contact or dust containing eggs. Demodex causes
+    symptoms such as: itching, foreign body sensation, redness,
+    crusting, blurry vision, and burning. All of these symptoms can
+    overlap with dry eye disease.
+  </p>
+  <div className={"row"}>
+    <div className={"col-1-of-3"}>
+      <img src={home} className={styles.picture} />
+    </div>
+    <div className={"col-1-of-3"}>
+      <div className={styles["symptoms-container"]}>
+        <h4 className={"h4"}>Symptoms include:</h4>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+      </div>
+    </div>
+    <div className={"col-1-of-3"}>
+      <div className={styles["treatments-container"]}>
+        <h4 className={"h4"}>Treatments include:</h4>
+        <div className={styles["symptoms-list"]}>
+          <RiArrowRightSLine className={styles.icon} />
+          <p className={"main-text"}>Itchiness</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> */
+}
