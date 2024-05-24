@@ -13,9 +13,9 @@ function HomeGuarantee() {
           deleniti.
         </h4>
       </div>
-      <div className={styles["guarantee-items-container"]}>
-        <div className={"row"}>
-          <div className={"col-1-of-4"}>
+      <div className={styles["guarantee-container"]}>
+        <div className={"width-container"}>
+          <div className={styles["guarantee-items"]}>
             <div className={styles["guarantee-item"]}>
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 High quality eye exam
@@ -25,8 +25,6 @@ function HomeGuarantee() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>
             </div>
-          </div>
-          <div className={"col-1-of-4"}>
             <div className={styles["guarantee-item"]}>
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 Prescription therapeutics
@@ -35,8 +33,6 @@ function HomeGuarantee() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>
             </div>
-          </div>
-          <div className={"col-1-of-4"}>
             <div className={styles["guarantee-item"]}>
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 In-office procedures
@@ -45,8 +41,6 @@ function HomeGuarantee() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit
               </p>
             </div>
-          </div>
-          <div className={"col-1-of-4"}>
             <div className={styles["guarantee-item"]}>
               <h4 className={`${styles["guarantee-title"]} h4`}>
                 Medical contact lenses
@@ -66,3 +60,51 @@ function HomeGuarantee() {
 }
 
 export default HomeGuarantee;
+
+{
+  /* <div className={styles["guarantee-items-container"]}>
+  <div className={"row"}>
+    <div className={"col-1-of-4"}>
+      <div className={styles["guarantee-item"]}>
+        <h4 className={`${styles["guarantee-title"]} h4`}>
+          High quality eye exam
+        </h4>
+
+        <p className={`${styles["guarantee-desc"]} main-text`}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        </p>
+      </div>
+    </div>
+    <div className={"col-1-of-4"}>
+      <div className={styles["guarantee-item"]}>
+        <h4 className={`${styles["guarantee-title"]} h4`}>
+          Prescription therapeutics
+        </h4>
+        <p className={`${styles["guarantee-desc"]} main-text`}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        </p>
+      </div>
+    </div>
+    <div className={"col-1-of-4"}>
+      <div className={styles["guarantee-item"]}>
+        <h4 className={`${styles["guarantee-title"]} h4`}>
+          In-office procedures
+        </h4>
+        <p className={`${styles["guarantee-desc"]} main-text`}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        </p>
+      </div>
+    </div>
+    <div className={"col-1-of-4"}>
+      <div className={styles["guarantee-item"]}>
+        <h4 className={`${styles["guarantee-title"]} h4`}>
+          Medical contact lenses
+        </h4>
+        <p className={`${styles["guarantee-desc"]} main-text`}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        </p>
+      </div>
+    </div>
+  </div>
+</div>; */
+}
