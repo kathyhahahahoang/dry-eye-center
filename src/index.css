@@ -36,6 +36,8 @@
   --gutter-column-large: 8rem;
   --gutter-column-med: 4rem;
   --gutter-column-small: 2rem;
+
+  --padding-xl: 20rem 0;
 }
 
 * {
@@ -313,5 +315,22 @@ a {
       3 * ((100% - 3 * var(--gutter-column-xl)) / 4) + 2 *
         var(--gutter-column-med)
     );
+  }
+}
+
+.width-container {
+  display: flex;
+  margin: 0 auto;
+  width: var(--grid-width-xl);
+  gap: var(--gutter-column-xl);
+
+  @media (max-width: 1800px) {
+    width: var(--grid-width-large);
+    gap: var(--gutter-column-large);
+  }
+
+  @media (max-width: 1500px) {
+    width: var(--grid-width-med);
+    gap: var(--gutter-column-med);
   }
 }
