@@ -38,6 +38,7 @@
   --gutter-column-small: 2rem;
 
   --padding-xl: 20rem 0;
+  --padding-large: 15rem 0 10rem 0;
 }
 
 * {
@@ -189,6 +190,11 @@ a {
   @media (max-width: 1500px) {
     padding: 0 4rem;
     gap: var(--gutter-column-med);
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 2rem;
+    gap: var(--gutter-column-small);
   }
 }
 

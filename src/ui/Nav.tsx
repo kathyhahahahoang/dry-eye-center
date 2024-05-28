@@ -1,5 +1,6 @@
 import styles from "./Nav.module.scss";
 import logo from "../assets/images/logo.png";
+import logoBlack from "../assets/images/logoBlack.png";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { RiCloseFill, RiMenuFill } from "@remixicon/react";
@@ -48,7 +49,7 @@ function Nav() {
     <nav className={scrolledNav}>
       <div className={styles.logo}>
         <NavLink to="/">
-          <img src={logo} className={styles.picture} />
+          <img src={logoBlack} className={styles.picture} />
         </NavLink>
       </div>
       <div>
