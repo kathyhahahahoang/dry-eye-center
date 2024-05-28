@@ -3,12 +3,14 @@ import styles from "./Contact.module.scss";
 function Contact() {
   return (
     <div className={styles.container}>
-      <div className={"width-container"}>
+      <div className={`${styles["contact-container"]} width-container`}>
         <div className={styles["details-container"]}>
           <div className={styles["info-container"]}>
-            <h4 className={"h4"}>
+            <h4 className={"h4"}>Address</h4>
+            <p className={"main-text"}>
+              {" "}
               Dry Eye Center of San Antonio at Alamo Eye Care
-            </h4>
+            </p>
             <p className={"main-text"}>
               1742 N. Loop 1604 E., Suite 117 <br />
               San Antonio, TX 78232

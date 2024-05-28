@@ -1,6 +1,17 @@
 .container {
   // background-color: lemonchiffon;
   padding: var(--padding-xl);
+
+  @media (max-width: 800px) {
+    padding: var(--padding-large);
+  }
+}
+
+.contact-container {
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
 }
 
 .details-container {
@@ -10,17 +21,30 @@
   flex-direction: column;
   gap: 4rem;
   color: var(--color-blue-dark);
+
+  @media (max-width: 800px) {
+    width: 100%;
+    flex-direction: row;
+  }
 }
 
 .info-container {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+
+  @media (max-width: 800px) {
+    width: 33%;
+  }
 }
 
 .map-container {
   width: 67%;
   // background-color: bisque;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 .map {
@@ -28,7 +52,7 @@
   width: 100%;
   height: 60rem;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     height: 50rem;
   }
 }
