@@ -195,6 +195,10 @@ a {
 .square-item {
   display: flex;
   height: 70rem;
+
+  /* @media (max-width: 1800px) {
+    height: 65rem;
+  } */
 }
 
 .square-details {

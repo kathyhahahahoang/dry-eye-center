@@ -2,10 +2,12 @@ import styles from "./Nav.module.scss";
 import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { RiCloseFill, RiMenuFill } from "@remixicon/react";
 
 function Nav() {
   const [isScrolled, setScrolled] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 650);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -29,7 +31,7 @@ function Nav() {
   }, []);
 
   const updateMedia = () => {
-    setIsMobile(window.innerWidth < 650);
+    setIsMobile(window.innerWidth < 1000);
   };
 
   const scrolledNav =
@@ -44,7 +46,30 @@ function Nav() {
 
   return (
     <nav className={scrolledNav}>
-      <ul className={styles["nav-links-ul"]}>
+      <div className={styles.logo}>
+        <NavLink to="/">
+          <img src={logo} className={styles.picture} />
+        </NavLink>
+      </div>
+      <div>
+        <NavLink to="/">
+          <p className={styles.name}>
+            Dry Eye Center of San Antonio at Alamo Eye Care
+          </p>
+        </NavLink>
+      </div>
+      <ul
+        className={styles["nav-links-ul"]}
+        style={
+          hamburgerOpen
+            ? {
+                opacity: "1",
+                transform: "translateX(0%)",
+                transition: "all 0.5s",
+              }
+            : {}
+        }
+      >
         <div className={styles["nav-links-left"]}>
           <li>
             <NavLink
@@ -52,6 +77,7 @@ function Nav() {
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }
+              onClick={() => setHamburgerOpen(false)}
             >
               Our doctors
             </NavLink>
@@ -62,6 +88,7 @@ function Nav() {
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }
+              onClick={() => setHamburgerOpen(false)}
             >
               Dry eye disease
             </NavLink>
@@ -72,6 +99,7 @@ function Nav() {
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }
+              onClick={() => setHamburgerOpen(false)}
             >
               Resources
             </NavLink>
@@ -89,6 +117,7 @@ function Nav() {
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }
+              onClick={() => setHamburgerOpen(false)}
             >
               At-home treatments
             </NavLink>
@@ -99,6 +128,7 @@ function Nav() {
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }
+              onClick={() => setHamburgerOpen(false)}
             >
               In-office treatments
             </NavLink>
@@ -109,12 +139,22 @@ function Nav() {
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }
+              onClick={() => setHamburgerOpen(false)}
             >
               Contact us
             </NavLink>
           </li>
         </div>
       </ul>
+      <button
+        className={styles.hamburger}
+        onClick={() => {
+          setHamburgerOpen((cur) => !cur);
+        }}
+      >
+        {!hamburgerOpen && <RiMenuFill className={styles.icon} />}
+        {hamburgerOpen && <RiCloseFill className={styles.icon} />}
+      </button>
     </nav>
   );
 }
