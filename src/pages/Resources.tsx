@@ -1,5 +1,4 @@
 import styles from "./Resources.module.scss";
-import eyes from "../assets/images/eyes.jpg";
 import { videos, articles } from "../constants/resourcesInfo";
 
 function Resources() {

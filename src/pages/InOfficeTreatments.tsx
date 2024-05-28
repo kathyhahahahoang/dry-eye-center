@@ -18,12 +18,9 @@ function InOfficeTreatments() {
       />
       {inOfficeTreatments.map((el, i) => {
         return (
-          <div className={styles["treatment-container"]} key={i}>
-            <div className={styles["treatment-picture"]}>
-              <img src={glasses} />
-            </div>
-            <div className={styles["treatment-details"]}>
-              <div className={styles["treatment-details-center"]}>
+          <div className={`${styles["treatment-item"]} square-item`} key={i}>
+            <div className={"square-details"}>
+              <div className={"square-details-center"}>
                 <h3 className={"h3"}>{el.title}</h3>
                 <p className={"main-text"}>{el.desc}</p>
                 {el.price && <p className={"main-text"}>{el.price}</p>}
@@ -37,6 +34,9 @@ function InOfficeTreatments() {
                   </NavLink>
                 )}
               </div>
+            </div>
+            <div className={"square-picture"}>
+              <img src={glasses} />
             </div>
           </div>
         );
