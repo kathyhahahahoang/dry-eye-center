@@ -103,6 +103,10 @@
     @media (max-width: 800px) {
       height: 28rem;
     }
+
+    @media (max-width: 500px) {
+      height: 25rem;
+    }
   }
 }
 
@@ -124,6 +128,10 @@
 
   @media (max-width: 800px) {
     width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    grid-column: 1/-1;
   }
 }
 
