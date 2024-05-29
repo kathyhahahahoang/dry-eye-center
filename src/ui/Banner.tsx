@@ -13,8 +13,10 @@ function Banner({ title, desc, bgColor, fontColor }: BannerProps) {
       className={styles.container}
       style={{ backgroundColor: `${bgColor}`, color: `${fontColor}` }}
     >
-      <h1 className={`${styles.title} h1`}>{title}</h1>
-      <p className={`${styles.desc} main-text`}>{desc}</p>
+      <div className={`${styles["banner-container"]} width-container`}>
+        <h1 className={`${styles.title} h1`}>{title}</h1>
+        <p className={`${styles.desc} main-text`}>{desc}</p>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,8 @@
 .container {
   width: 100%;
+}
+
+.banner-container {
   height: 70rem;
   position: relative;
 
@@ -8,35 +11,41 @@
   }
 
   @media (max-width: 1500px) {
-    height: 60rem;
+    height: 58rem;
+  }
+
+  @media (max-width: 1000px) {
+    height: 50rem;
+  }
+
+  @media (max-width: 800px) {
+    height: 43rem;
   }
 }
 
 .title {
   position: absolute;
-  left: 12rem;
   top: 50%;
 
-  @media (max-width: 1800px) {
-    left: 8rem;
-  }
-
   @media (max-width: 1500px) {
-    left: 4rem;
+    top: 55%;
   }
 }
 
 .desc {
   position: absolute;
-  left: 12rem;
   top: 65%;
   width: 75%;
 
-  @media (max-width: 1800px) {
-    left: 8rem;
+  @media (max-width: 1500px) {
+    top: 69%;
   }
 
-  @media (max-width: 1500px) {
-    left: 4rem;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    top: 72%;
   }
 }
