@@ -1,3 +1,4 @@
+/////NAVBAR WITHOUT HAMBURGER MENU////////
 .container {
   width: 100vw;
   padding: 4rem 14rem;
@@ -12,17 +13,6 @@
   @media (max-width: 1500px) {
     padding: 3rem 4rem;
   }
-
-  @media (max-width: 1000px) {
-    height: 10rem;
-    padding: 4rem 0;
-    transition: all 0.5s;
-    background-color: var(--color-blue-light);
-  }
-
-  @media (max-width: 800px) {
-    background-color: royalblue;
-  }
 }
 
 .container-scrolled {
@@ -35,18 +25,6 @@
   display: flex;
   align-items: center;
 
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    margin-top: 6rem;
-    width: 100%;
-    height: 100vh;
-    padding: 10rem;
-    opacity: 0;
-    transition: all 0.5s;
-    background-color: var(--color-grey-light);
-    transform: translateX(100%);
-  }
-
   li {
     font-size: var(--font-xl);
 
@@ -56,10 +34,6 @@
 
     @media (max-width: 1500px) {
       font-size: var(--font-med);
-    }
-
-    @media (max-width: 1000px) {
-      font-size: var(--font-xl);
     }
   }
 }
@@ -76,22 +50,12 @@
   @media (max-width: 1500px) {
     gap: 2rem;
   }
-
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    margin-bottom: 4rem;
-    gap: 4rem;
-  }
 }
 
 .nav-links-center {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
 }
 
 .picture {
@@ -119,37 +83,6 @@
   @media (max-width: 1500px) {
     gap: 2rem;
   }
-
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    align-items: center;
-    margin-left: initial;
-    gap: 4rem;
-  }
-}
-
-.logo {
-  display: none;
-
-  @media (max-width: 1000px) {
-    display: inline-block;
-    position: absolute;
-    left: 2rem;
-  }
-}
-
-.name {
-  display: none;
-  font-family: "DM Serif Text", serif;
-
-  @media (max-width: 1000px) {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: var(--font-large);
-    color: var(--color-grey-dark);
-  }
 }
 
 .link {
@@ -170,81 +103,60 @@
   border-bottom: 2px solid;
 }
 
+///////NAVBAR WITH HAMBURGER MENU/////
+.hamburger-container {
+  width: 100%;
+  z-index: 200;
+  position: fixed;
+}
+
+.hamburger-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--color-blue-med);
+  height: 100%;
+}
+
+.hamburger-ul-container {
+  opacity: 0;
+  background-color: var(--color-grey-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 6rem;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+
+  li {
+    font-size: var(--font-xl);
+  }
+}
+
+.name {
+  font-family: "DM Serif Text", serif;
+  font-size: var(--font-large);
+  text-align: center;
+  color: var(--color-grey-dark);
+
+  @media (max-width: 650px) {
+    font-size: var(--font-med);
+  }
+}
+
 .hamburger {
   border: none;
-  display: none;
-  padding: 0 1rem;
   cursor: pointer;
   z-index: 1100;
-  position: absolute;
   background-color: transparent;
-
-  @media (max-width: 1000px) {
-    display: block;
-    right: 1rem;
-    top: 4rem;
-  }
 }
 
 .icon {
   width: 3rem;
   height: 3rem;
 }
-
-/////////// SOLID WHITE BACKGROUND THAT DOESNT CHANGE WHEN SCROLLED ///////
-
-// .container {
-//   width: 100vw;
-//   padding: 4rem 14rem 0 14rem;
-//   margin: 0 auto;
-//   position: fixed;
-//   z-index: 200;
-//   background-color: white;
-//   transition: all 0.3s;
-// }
-
-// .nav-links-ul {
-//   display: flex;
-//   align-items: center;
-//   position: relative;
-//   padding-bottom: 4rem;
-
-//   li {
-//     font-size: var(--font-xl);
-//   }
-// }
-
-// .nav-links-left {
-//   display: flex;
-//   align-items: center;
-//   gap: 7rem;
-// }
-
-// .nav-links-center {
-//   position: absolute;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-
-// .picture {
-//   width: 12rem;
-//   height: auto;
-// }
-
-// .nav-links-right {
-//   margin-left: auto;
-//   display: flex;
-//   gap: 7rem;
-// }
-
-// .link {
-//   color: var(--color-blue-med);
-// }
-
-// .link:hover {
-//   color: black;
-// }
-
-// .link-active {
-//   color: black;
-// }
