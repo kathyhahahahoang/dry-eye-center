@@ -6,6 +6,10 @@
   flex-direction: row-reverse;
   background-color: var(--color-blue-light);
   color: var(--color-grey-dark);
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .link-container {
