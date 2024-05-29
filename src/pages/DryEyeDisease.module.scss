@@ -4,24 +4,18 @@
 }
 
 .dry-eye-intro {
-  // background-color: palevioletred;
-  padding: 0 14rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  @media (max-width: 1800px) {
-    padding: 0 8rem;
-  }
-
-  @media (max-width: 1500px) {
-    padding: 0 4rem;
-  }
 }
 
 .button {
   align-self: start;
   margin: 6rem 0;
+
+  @media (max-width: 1000px) {
+    margin: 2rem 0 4rem 0;
+  }
 }
 
 ///////////////////////////////////////////
@@ -32,6 +26,10 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @media (max-width: 1000px) {
+    padding: 6rem 0;
+  }
 }
 
 .disease-item:nth-child(odd) {
@@ -48,26 +46,46 @@
 }
 
 .disease-name {
-  padding-left: 14rem;
+  padding: 0 14rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
   @media (max-width: 1800px) {
-    padding-left: 8rem;
+    padding: 0 8rem;
   }
 
   @media (max-width: 1500px) {
-    padding-left: 4rem;
+    padding: 0 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 2rem;
   }
 
   p {
     width: 75%;
+
+    @media (max-width: 1500px) {
+      width: 100%;
+    }
+  }
+}
+
+.disease-info-container {
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .disease-picture {
   width: 33%;
+
+  @media (max-width: 800px) {
+    grid-column: 1/-1;
+    width: 100%;
+  }
 
   img {
     width: 100%;
@@ -75,7 +93,15 @@
     object-fit: cover;
 
     @media (max-width: 1800px) {
-      height: 40rem;
+      height: 43rem;
+    }
+
+    @media (max-width: 1000px) {
+      height: 34rem;
+    }
+
+    @media (max-width: 800px) {
+      height: 28rem;
     }
   }
 }
@@ -83,19 +109,42 @@
 .symptoms-container,
 .treatments-container {
   width: 33%;
-  padding: 6rem;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+
+  @media (max-width: 1800px) {
+    padding: 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 3rem;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.center-container {
+  // background-color: lawngreen;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
-  @media (max-width: 1500px) {
-    padding: 4rem;
+  @media (max-width: 1800px) {
+    gap: 1rem;
   }
 
   h4 {
     margin-bottom: 1rem;
   }
+}
+
+.symptom-title,
+.treatment-title {
+  text-align: center;
 }
 
 .symptoms-list,

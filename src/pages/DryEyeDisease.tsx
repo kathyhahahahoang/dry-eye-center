@@ -10,7 +10,7 @@ function DryEyeDisease() {
   return (
     <div className={styles.container}>
       <Banner title="What is dry eye disease?" />
-      <div className={styles["dry-eye-intro"]}>
+      <div className={`${styles["dry-eye-intro"]} width-container`}>
         <p className={"main-text"}>
           Dry eye disease is a multi-factorial disease and is generally a
           product of one of two reasons: the tears are evaporating too quickly
@@ -57,32 +57,41 @@ function DryEyeDisease() {
                 <h2 className={"h2"}>{el.name}</h2>
                 <p className={"main-text"}>{el.details}</p>
               </div>
-              <div className={"width-container"}>
+              <div
+                className={`${styles["disease-info-container"]} width-container`}
+              >
                 <div className={styles["disease-picture"]}>
                   <img src={home} />
                 </div>
                 <div className={styles["symptoms-container"]}>
-                  <h4 className={"h4"}>Symptoms include:</h4>
-                  {el.symptoms.map((symptom, i) => {
-                    return (
-                      <div className={styles["symptoms-list"]} key={i}>
-                        <RiArrowRightSLine className={styles.icon} />
-                        <p className={"main-text"}>{symptom}</p>
-                      </div>
-                    );
-                  })}
+                  <div className={styles["center-container"]}>
+                    <h4 className={`${styles["symptom-title"]} h4`}>
+                      Common symptoms:
+                    </h4>
+                    {el.symptoms.map((symptom, i) => {
+                      return (
+                        <div className={styles["symptoms-list"]} key={i}>
+                          <RiArrowRightSLine className={styles.icon} />
+                          <p className={"main-text"}>{symptom}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
                 <div className={styles["treatments-container"]}>
-                  {" "}
-                  <h4 className={"h4"}>Treatments include:</h4>
-                  {el.treatments.map((treatment, i) => {
-                    return (
-                      <div className={styles["treatments-list"]} key={i}>
-                        <RiArrowRightSLine className={styles.icon} />
-                        <p className={"main-text"}>{treatment}</p>
-                      </div>
-                    );
-                  })}
+                  <div className={styles["center-container"]}>
+                    <h4 className={`${styles["treatment-title"]} h4`}>
+                      Available treatments:
+                    </h4>
+                    {el.treatments.map((treatment, i) => {
+                      return (
+                        <div className={styles["treatments-list"]} key={i}>
+                          <RiArrowRightSLine className={styles.icon} />
+                          <p className={"main-text"}>{treatment}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
