@@ -20,6 +20,10 @@
   @media (max-width: 1500px) {
     padding: 0 4rem;
   }
+
+  @media (max-width: 1000px) {
+    padding: 0 2rem;
+  }
 }
 
 .guarantee-items {
@@ -33,6 +37,15 @@
 
   @media (max-width: 1500px) {
     column-gap: var(--gutter-column-med);
+  }
+
+  @media (max-width: 1000px) {
+    column-gap: var(--gutter-column-small);
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, minmax(40%, 48%));
+    row-gap: var(--gutter-row-small);
   }
 }
 
@@ -53,6 +66,19 @@
     padding: 2rem;
     gap: 2rem;
     height: 30rem;
+  }
+
+  @media (max-width: 1000px) {
+    height: 26rem;
+  }
+
+  @media (max-width: 800px) {
+    height: 26rem;
+    padding: 4rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 2rem;
   }
 }
 
@@ -76,5 +102,9 @@
 
   @media (max-width: 1500px) {
     margin-left: 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    margin-left: 2rem;
   }
 }
