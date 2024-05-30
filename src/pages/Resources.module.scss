@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   height: 100%;
+  background-color: lavenderblush;
 }
 
 .video-section {
@@ -9,6 +10,27 @@
   gap: 6rem;
   background-color: var(--color-blue-light);
   padding: 20rem 0 10rem 0;
+
+  @media (max-width: 1800px) {
+    padding: 15rem 0 10rem 0;
+  }
+
+  @media (max-width: 1500px) {
+    padding: 13rem 0 10rem 0;
+    gap: 4rem;
+  }
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  background-color: var(--color-grey-light);
+  padding: 6rem 0 10rem 0;
+
+  @media (max-width: 1500px) {
+    gap: 5rem;
+  }
 }
 
 .title {
@@ -34,6 +56,14 @@
     column-gap: var(--gutter-column-med);
     row-gap: 5rem;
   }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, minmax(45%, 48%));
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .video-item {
@@ -51,8 +81,32 @@
   width: 100%;
   height: 30rem;
 
+  @media (max-width: 1800px) {
+    height: 27rem;
+  }
+
   @media (max-width: 1500px) {
     height: 23rem;
+  }
+
+  @media (max-width: 1200px) {
+    height: 21rem;
+  }
+
+  @media (max-width: 1000px) {
+    height: 25rem;
+  }
+
+  @media (max-width: 800px) {
+    height: 20rem;
+  }
+
+  @media (max-width: 650px) {
+    height: 33rem;
+  }
+
+  @media (max-width: 500px) {
+    height: 25rem;
   }
 
   img {
@@ -72,19 +126,23 @@
   }
 }
 
-.article-section {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-  background-color: var(--color-grey-light);
-  padding: 10rem 0;
-}
-
 .articles-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10rem;
+
+  @media (max-width: 1800px) {
+    gap: 8rem;
+  }
+
+  @media (max-width: 1500px) {
+    gap: 6rem;
+  }
+
+  @media (max-width: 1000px) {
+    gap: 4rem;
+  }
 }
 
 .article-item {
@@ -92,10 +150,26 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--gutter-column-xl);
+
+  @media (max-width: 1800px) {
+    gap: var(--gutter-column-large);
+  }
+
+  @media (max-width: 1500px) {
+    gap: var(--gutter-column-med);
+  }
+
+  @media (max-width: 1000px) {
+    gap: var(--gutter-column-small);
+  }
 }
 
 .article-details {
   width: 50%;
+
+  @media (max-width: 800px) {
+    width: 67%;
+  }
 }
 
 .article-picture {
@@ -104,6 +178,11 @@
 
   @media (max-width: 1500px) {
     height: 16rem;
+  }
+
+  @media (max-width: 800px) {
+    height: 10rem;
+    width: 33%;
   }
 
   img {
