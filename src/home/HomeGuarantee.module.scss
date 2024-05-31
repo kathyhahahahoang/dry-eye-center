@@ -4,12 +4,23 @@
   gap: 6rem;
   padding: 20rem 0;
 
+  @media (max-width: 1800px) {
+    padding: 15rem 0;
+  }
+
   @media (max-width: 1500px) {
     padding: 10rem 0;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 8rem 0;
   }
 }
 
 .title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding: 0 14rem;
   color: var(--color-blue-dark);
 

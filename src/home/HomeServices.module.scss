@@ -2,8 +2,16 @@
   background-color: var(--color-blue-light);
   padding: var(--padding-xl);
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1800px) {
+    padding: 15rem 0;
+  }
+
+  @media (max-width: 1500px) {
     padding: 10rem 0;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 8rem 0;
   }
 }
 
@@ -23,7 +31,6 @@
 
 .services-details {
   width: 67%;
-  // background-color: pink;
   display: flex;
   flex-direction: column;
   gap: 2rem;

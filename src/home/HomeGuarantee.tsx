@@ -6,12 +6,12 @@ function HomeGuarantee() {
     <div className={styles.container}>
       <div className={styles["title-container"]}>
         <h2 className={"h2"}>Guarantee</h2>
-        <h4 className={"h4"}>
+        <p className={"main-text"}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
           nobis ut distinctio nam ducimus sapiente unde? Itaque, vel sapiente
           sint veniam quod consequatur, cumque iusto sed quis fugit ipsam
           deleniti.
-        </h4>
+        </p>
       </div>
       <div className={styles["guarantee-container"]}>
         <div className={"width-container"}>
