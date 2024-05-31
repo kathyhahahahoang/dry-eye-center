@@ -10,8 +10,7 @@ function InOfficeTreatments() {
     <div className={styles.container}>
       <Banner
         title="In-office treatments"
-        desc="At Alamo Eye Care, we offer a variety of in-office dry eye procedures
-          and treatments. From prescribed pharmaceutical therapeutic treatments
+        desc="From prescribed pharmaceutical therapeutic treatments
           to FDA approved procedures, we are happy to curate a treatment plan to
           best fit your needs."
         bgColor="var(--color-orange-extra-light)"
