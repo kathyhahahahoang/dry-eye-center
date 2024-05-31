@@ -116,12 +116,19 @@
   }
 }
 
-.video-details {
+.video-details,
+.article-details {
   p {
     font-size: var(--font-xxl);
 
     @media (max-width: 1500px) {
-      font-size: var(--font-xl);
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
     }
   }
 }

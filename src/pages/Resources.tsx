@@ -16,7 +16,7 @@ function Resources() {
                   <img src={el.picture} />
                 </div>
                 <div className={styles["video-details"]}>
-                  <p className={"main-text"}>{el.title}</p>
+                  <p>{el.title}</p>
                 </div>
               </div>
             ))}
@@ -32,7 +32,7 @@ function Resources() {
             {articles.map((el, i) => (
               <div className={styles["article-item"]} key={i}>
                 <div className={styles["article-details"]}>
-                  <h4 className={"h4"}>{el.title}</h4>
+                  <p>{el.title}</p>
                 </div>
                 <div className={styles["article-picture"]}>
                   <img src={el.picture} />
