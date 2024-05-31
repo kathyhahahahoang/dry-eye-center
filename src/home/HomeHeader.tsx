@@ -2,6 +2,7 @@ import styles from "./HomeHeader.module.scss";
 import elderly10 from "../assets/images/elderly10.jpg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { RiArrowDownLine } from "@remixicon/react";
 
 function HomeHeader() {
   const [twoLines, setTwoLines] = useState(window.innerWidth < 1500);
@@ -49,6 +50,9 @@ function HomeHeader() {
     <div className={styles.container}>
       <div className={styles["picture-container"]}>
         <div className={styles.overlay} />
+        <div className={styles.arrow}>
+          <RiArrowDownLine className={styles.icon} />
+        </div>
         <img src={elderly10} className={styles.picture} />
       </div>
       <div className={styles["text-container"]}>
