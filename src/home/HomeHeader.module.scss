@@ -14,8 +14,14 @@
   align-items: center;
   text-align: center;
 
-  @media (max-width: 1800px) {
-    gap: 2rem;
+  @media (max-width: 1500px) {
+    width: 80%;
+    gap: 3rem;
+  }
+
+  @media (max-width: 1000px) {
+    width: 90%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -30,6 +36,10 @@
   color: var(--color-grey-light);
   text-shadow: 1px 1px 14px rgba(0, 0, 0, 0.832);
   padding-bottom: 4rem;
+
+  @media (max-width: 1500px) {
+    padding-bottom: 0;
+  }
 }
 
 .picture-container {
