@@ -119,7 +119,7 @@
 .video-details,
 .article-details {
   p {
-    font-size: var(--font-xxl);
+    font-size: 3rem;
 
     @media (max-width: 1500px) {
       font-size: 2.4rem;
@@ -177,6 +177,10 @@
   @media (max-width: 800px) {
     width: 67%;
   }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 .article-picture {
@@ -190,6 +194,15 @@
   @media (max-width: 800px) {
     height: 10rem;
     width: 33%;
+  }
+
+  @media (max-width: 800px) {
+    height: 10rem;
+    width: 33%;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
   }
 
   img {
