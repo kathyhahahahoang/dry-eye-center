@@ -48,7 +48,7 @@ function HomeNavBar() {
   const HamburgerNavBar = (
     <nav className={styles["hamburger-container"]}>
       <div className={styles["hamburger-nav"]}>
-        <div className={styles.logo}>
+        <div>
           <NavLink to="/">
             <img src={logoBlack} className={styles.picture} />
           </NavLink>
