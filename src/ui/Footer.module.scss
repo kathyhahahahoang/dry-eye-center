@@ -126,6 +126,10 @@
     width: 100%;
     justify-content: space-between;
   }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 
 .ul-container {
