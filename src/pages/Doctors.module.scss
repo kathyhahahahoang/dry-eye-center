@@ -3,6 +3,14 @@
   display: flex;
   flex-direction: column;
   gap: 20rem;
+
+  @media (max-width: 1500px) {
+    padding: var(--padding-large);
+  }
+
+  @media (max-width: 1000px) {
+    gap: 10rem;
+  }
 }
 
 .doctor-details {
@@ -10,47 +18,26 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .doctor-picture {
   width: 33%;
 
+  @media (max-width: 1000px) {
+    width: 0%;
+  }
+
   img {
     width: 100%;
     height: 70rem;
     object-fit: cover;
+
+    @media (max-width: 1500px) {
+      height: 50rem;
+    }
   }
 }
-// .container {
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   padding-top: 15rem;
-// }
-
-// .doctor-container {
-//   padding: 10rem 0;
-//   color: var(--color-grey-dark);
-// }
-
-// // .doctor-container + .doctor-container {
-
-// // }
-
-// .text-container {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 3rem;
-// }
-
-// .intro {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .picture {
-//   width: 100%;
-//   height: 70rem;
-//   object-fit: cover;
-// }
