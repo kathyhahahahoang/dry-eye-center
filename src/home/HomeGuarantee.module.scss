@@ -58,6 +58,10 @@
     grid-template-columns: repeat(2, minmax(40%, 48%));
     row-gap: var(--gutter-row-small);
   }
+
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .guarantee-item {
