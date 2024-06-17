@@ -114,27 +114,18 @@ function HomeNavBar() {
           >
             Resources
           </NavLink>
+          s
         </li>
+
         <li>
           <NavLink
-            to="/at-home-treatments"
+            to="/treatments"
             className={({ isActive }) =>
               isActive ? `${styles["link-active"]}` : `${scrolledLink}`
             }
             onClick={() => setHamburgerOpen(false)}
           >
-            At-home treatments
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/in-office-treatments"
-            className={({ isActive }) =>
-              isActive ? `${styles["link-active"]}` : `${scrolledLink}`
-            }
-            onClick={() => setHamburgerOpen(false)}
-          >
-            In-office treatments
+            Treatments
           </NavLink>
         </li>
         <li>
@@ -195,22 +186,12 @@ function HomeNavBar() {
         <div className={styles["nav-links-right"]}>
           <li>
             <NavLink
-              to="/at-home-treatments"
+              to="/treatments"
               className={({ isActive }) =>
                 isActive ? `${styles["link-active"]}` : `${scrolledLink}`
               }
             >
-              At-home treatments
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/in-office-treatments"
-              className={({ isActive }) =>
-                isActive ? `${styles["link-active"]}` : `${scrolledLink}`
-              }
-            >
-              In-office treatments
+              Treatments
             </NavLink>
           </li>
           <li>
